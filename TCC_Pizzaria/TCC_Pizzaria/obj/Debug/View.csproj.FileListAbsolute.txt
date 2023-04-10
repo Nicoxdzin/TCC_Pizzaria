@@ -1,0 +1,11 @@
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\TCC_Pizzaria.exe.config
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\TCC_Pizzaria.exe
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\TCC_Pizzaria.pdb
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Properties.Resources.resources
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.GenerateResource.cache
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.exe
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.pdb
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.FormLogin.resources
