@@ -1,0 +1,15 @@
+C:\Users\Aluno\source\repos\view\controller\bin\Debug\net6.0\controller.deps.json
+C:\Users\Aluno\source\repos\view\controller\bin\Debug\net6.0\controller.dll
+C:\Users\Aluno\source\repos\view\controller\bin\Debug\net6.0\controller.pdb
+C:\Users\Aluno\source\repos\view\controller\bin\Debug\net6.0\model.dll
+C:\Users\Aluno\source\repos\view\controller\bin\Debug\net6.0\model.pdb
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.AssemblyInfoInputs.cache
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.AssemblyInfo.cs
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.csproj.CopyComplete
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.dll
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\refint\controller.dll
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\controller.pdb
+C:\Users\Aluno\source\repos\view\controller\obj\Debug\net6.0\ref\controller.dll

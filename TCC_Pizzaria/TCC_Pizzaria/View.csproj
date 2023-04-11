@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,6 +91,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\minimizar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{4a96fac7-ac91-4382-857c-b70a3d266aa6}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{531874de-5ae1-416c-84f3-76dbf89e003c}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

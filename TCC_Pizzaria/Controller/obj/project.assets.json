@@ -451,6 +451,16 @@
             "rid": "win"
           }
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
       }
     }
   },
@@ -1502,10 +1512,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Model >= 1.0.0",
       "MySql.Data >= 8.0.32.1"
     ]
   },
@@ -1540,7 +1556,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Aluno\\Documents\\GitHub\\TCC_Pizzaria\\TCC_Pizzaria\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Documents\\GitHub\\TCC_Pizzaria\\TCC_Pizzaria\\Model\\Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
