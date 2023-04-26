@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace TCC_Pizzaria
         public Funcionario()
         {
             InitializeComponent();
+            //menuStrip1.Renderer = new CustomToolStripRenderer();
+
         } 
         
         private Form activeForm = null;
@@ -104,6 +107,21 @@ namespace TCC_Pizzaria
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void guna2ProgressBar1_ValueChanged(object sender, EventArgs e)
         {
 
         }
