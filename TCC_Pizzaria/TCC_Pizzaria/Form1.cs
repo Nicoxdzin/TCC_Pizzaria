@@ -57,5 +57,30 @@ namespace TCC_Pizzaria
         {
             this.Close();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            UserController usu_controller = new UserController();
+            Usuario usuario = new Usuario();
+            usuario.usuario = txtNome.Text;
+            usuario.senha = txtSenha.Text;
+            usuario = usu_controller.Entrar(usuario);
+            if (usuario.logado == true)
+            {
+
+                if (usuario.perfil == 1)
+                {
+                    Admin admin = new Admin();
+                    admin.ShowDialog();
+                }
+                else
+                {
+                    Funcionario funcionario = new Funcionario();
+                    funcionario.ShowDialog();
+                }
+
+            }
+
+        }
     }
 }
