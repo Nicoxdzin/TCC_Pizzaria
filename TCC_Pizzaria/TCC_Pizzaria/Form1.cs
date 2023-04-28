@@ -22,7 +22,7 @@ namespace TCC_Pizzaria
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            guna2ShadowForm1.SetShadowForm(this);
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)

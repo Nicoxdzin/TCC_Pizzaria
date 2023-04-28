@@ -70,7 +70,7 @@ namespace TCC_Pizzaria
 
         private void Funcionario_Load(object sender, EventArgs e)
         {
-
+            guna2ShadowForm1.SetShadowForm(this);
         }
 
         private void FuncPnlPrincipal_Paint(object sender, PaintEventArgs e)
@@ -125,5 +125,19 @@ namespace TCC_Pizzaria
         {
 
         }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+                    }
     }
 }
