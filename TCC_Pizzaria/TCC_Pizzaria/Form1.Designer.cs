@@ -121,11 +121,12 @@
             // 
             this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(90)))), ((int)(((byte)(150)))));
             this.btnEntrar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(90)))), ((int)(((byte)(150)))));
+            this.btnEntrar.BorderRadius = 2;
             this.btnEntrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEntrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEntrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEntrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEntrar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(156)))), ((int)(((byte)(121)))));
+            this.btnEntrar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(106)))), ((int)(((byte)(121)))));
             this.btnEntrar.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
             this.btnEntrar.Location = new System.Drawing.Point(4, 2);

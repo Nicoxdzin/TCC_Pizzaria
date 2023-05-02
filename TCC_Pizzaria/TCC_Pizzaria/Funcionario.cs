@@ -121,5 +121,25 @@ namespace TCC_Pizzaria
             }
             label1.Text = "Pedidos";
         }
+
+        private void Usuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

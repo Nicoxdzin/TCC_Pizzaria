@@ -56,7 +56,6 @@ namespace Controller
 
         public DataTable Getperfil()
         {
-
             MySqlConnection conexao = conn.getConexao();
             string SQL = "SELECT * FROM perfil";
             DataTable dtPerfil = new DataTable();
