@@ -16,6 +16,7 @@ namespace TCC_Pizzaria
         public Funcionario()
         {
             InitializeComponent();
+           
             //menuStrip1.Renderer = new CustomToolStripRenderer();
 
         } 
@@ -43,29 +44,9 @@ namespace TCC_Pizzaria
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
         private void mtsClientes_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Clientes());
-        }
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPedidos_Click(object sender, EventArgs e)
-        {
-            if (FuncPnlPrincipal != null)//temporario
-            {
-                activeForm.Close();
-            }
         }
 
         private void Funcionario_Load(object sender, EventArgs e)
@@ -106,27 +87,7 @@ namespace TCC_Pizzaria
 
         }
 
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void guna2ProgressBar1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -137,7 +98,28 @@ namespace TCC_Pizzaria
         }
 
         private void guna2ShadowPanel1_Paint_1(object sender, PaintEventArgs e)
+        { 
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
-                    }
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Usuarios());
+            label1.Text = "Usuários";
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (FuncPnlPrincipal != null)//temporario
+            {
+                activeForm.Close();
+            }
+            label1.Text = "Pedidos";
+        }
     }
 }

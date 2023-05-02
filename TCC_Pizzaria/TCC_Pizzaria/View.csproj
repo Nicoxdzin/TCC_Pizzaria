@@ -82,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -129,17 +138,9 @@
       <Project>{48d1d555-324b-43c0-bba8-83de94727907}</Project>
       <Name>Controller1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Controller\Controller.csproj">
-      <Project>{4a96fac7-ac91-4382-857c-b70a3d266aa6}</Project>
-      <Name>Controller</Name>
-    </ProjectReference>
     <ProjectReference Include="..\model1\model1.csproj">
       <Project>{3b7f83ca-4dea-4dd6-8d7f-a0e8511e7ca5}</Project>
       <Name>model1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{531874de-5ae1-416c-84f3-76dbf89e003c}</Project>
-      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +151,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-burger %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apps-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

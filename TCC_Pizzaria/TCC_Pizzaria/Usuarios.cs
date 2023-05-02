@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace model1
+namespace TCC_Pizzaria
 {
-    public partial class pedidos : Form
+    public partial class Usuarios : Form
     {
-        public pedidos()
+        public Usuarios()
         {
             InitializeComponent();
         }

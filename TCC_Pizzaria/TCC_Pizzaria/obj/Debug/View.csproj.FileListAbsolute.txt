@@ -117,3 +117,4 @@ C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Deb
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\Guna.UI2.dll
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Usuarios.resources

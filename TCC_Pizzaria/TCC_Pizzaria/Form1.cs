@@ -23,6 +23,7 @@ namespace TCC_Pizzaria
         private void Form1_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
+
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -80,6 +81,26 @@ namespace TCC_Pizzaria
                 }
 
             }
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
