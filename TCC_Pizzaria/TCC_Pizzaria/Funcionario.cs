@@ -152,11 +152,6 @@ namespace TCC_Pizzaria
             OpenChildFormPedidos(new NovoPedido());
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pnlPedidos_Paint(object sender, PaintEventArgs e)
         {
 
