@@ -104,3 +104,5 @@ C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\TCC_Pizzaria.application
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.exe.manifest
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.application
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.ListaPedido.resources
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.NovoPedido.resources
