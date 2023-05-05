@@ -43,6 +43,8 @@
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.guna2ShadowPanel1.SuspendLayout();
             this.guna2ShadowPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,6 +150,7 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.button1);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(-21, -35);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -217,6 +220,16 @@
             this.guna2ShadowPanel4.Size = new System.Drawing.Size(108, 40);
             this.guna2ShadowPanel4.TabIndex = 29;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(109, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +252,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,5 +274,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
+        private System.Windows.Forms.Button button1;
     }
 }

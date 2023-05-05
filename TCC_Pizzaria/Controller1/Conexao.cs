@@ -5,7 +5,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 
 namespace Controller1
 {
@@ -17,11 +16,10 @@ namespace Controller1
         static private string usuario = "root";//nome do usuario hostgator
         static private string senha = "";//Senha do bd
 
-        static public string StrCon = "server=" + servidor + ";database=" +
-            bancodedados + ";user id=" + usuario + ";password=" + senha;
-        public MySqlConnection getConexao()
+        static public string StrCon = @"Data Source=SNCTP06LABF06\SQLEXPRESS;Initial Catalog = db_tcc; Integrated Security = True";
+        public SqlConnection getConexao()
         {
-            MySqlConnection conn = new MySqlConnection(StrCon);
+            SqlConnection conn = new SqlConnection(StrCon);
             return conn;
         }
         public bool conectar()
@@ -35,7 +33,7 @@ namespace Controller1
             catch (Exception ex)
             {
                 result = false;
-                Exception exception= ex;
+                Exception exception = ex;
             }
             return result;//retorna a conexao
 
@@ -46,21 +44,21 @@ namespace Controller1
         }
         public DataTable Getperfil()
         {
-            MySqlConnection conexao = getConexao();
+            SqlConnection conexao = getConexao();
             string SQL = "SELECT * FROM perfil";
             DataTable dtPerfil = new DataTable();
             try
             {
                 conexao.Open();
-                MySqlCommand comando = new MySqlCommand(SQL, conexao);
-                MySqlDataAdapter dados = new MySqlDataAdapter(comando);
+                SqlCommand comando = new SqlCommand(SQL, conexao);
+                SqlDataAdapter dados = new SqlDataAdapter(comando);
                 dados.Fill(dtPerfil);
 
 
             }
-            catch (MySqlException ex)
+            catch (SqlException ex)
             {
-                Exception exception = ex;   
+                Exception exception = ex;
             }
             finally
             {

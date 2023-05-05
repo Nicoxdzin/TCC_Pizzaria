@@ -1,0 +1,15 @@
+create database db_tcc;
+
+use db_tcc;
+
+create table tb_usuario(
+id int not null primary key IDENTITY(1,1),
+nome varchar(120) not null,
+usuario varchar(120) not null,
+senha varchar(120) not null,
+perfil int not null default 2);
+
+insert into tb_usuario values 
+('Nicolas','Nicoxdzin','1234',default);
+
+select * from tb_usuario;

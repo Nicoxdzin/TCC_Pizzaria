@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using Controller1;
 using model1;
 
@@ -21,12 +21,12 @@ namespace Controller
         public Usuario Entrar(Usuario usu )
         {
             String logar = "SELECT * FROM tb_usuario WHERE usuario=@usuario AND senha=@senha";
-            MySqlConnection conexao = conn.getConexao();
-            MySqlCommand comando = new MySqlCommand(logar, conexao);
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(logar, conexao);
             conexao.Open();
             comando.Parameters.AddWithValue("@usuario", usu.usuario);
             comando.Parameters.AddWithValue("@senha", usu.senha);
-            MySqlDataReader registro = comando.ExecuteReader();//executa a consulta
+            SqlDataReader registro = comando.ExecuteReader();//executa a consulta
             if (registro.HasRows)
             {
                 registro.Read();
@@ -56,14 +56,14 @@ namespace Controller
 
         public DataTable Getperfil()
         {
-            MySqlConnection conexao = conn.getConexao();
+            SqlConnection conexao = conn.getConexao();
             string SQL = "SELECT * FROM perfil";
             DataTable dtPerfil = new DataTable();
             try
             {
                 conexao.Open();
-                MySqlCommand comando = new MySqlCommand(SQL, conexao);
-                MySqlDataAdapter dados = new MySqlDataAdapter(comando);
+                SqlCommand comando = new SqlCommand(SQL, conexao);
+                SqlDataAdapter dados = new SqlDataAdapter(comando);
 
                 dados.Fill(dtPerfil);
 
