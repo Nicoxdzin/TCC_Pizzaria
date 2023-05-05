@@ -38,21 +38,6 @@ namespace TCC_Pizzaria
             //lblCurrentChildForm.text = childForm.Name;
 
         }
-        public void OpenChildFormPedidos(Form childForm)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pnlPedidos.Controls.Add(childForm);
-            pnlPedidos.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-            //lblCurrentChildForm.text = childForm.Name;
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -130,11 +115,7 @@ namespace TCC_Pizzaria
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if (FuncPnlPrincipal != null)//temporario
-            {
-                activeForm.Close();
-            }
-            label1.Text = "Pedidos";
+            OpenChildForm(new Pedidos());
         }
 
         private void Usuario_Click(object sender, EventArgs e)
@@ -147,19 +128,18 @@ namespace TCC_Pizzaria
 
         }
 
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-            OpenChildFormPedidos(new NovoPedido());
-        }
-
-        private void pnlPedidos_Paint(object sender, PaintEventArgs e)
+        private void FuncPnlPrincipal_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void guna2Button7_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            OpenChildFormPedidos(new ListaPedido());
+            if (FuncPnlPrincipal != null)//temporario
+            {
+                activeForm.Close();
+            }
+            label1.Text = "Início";
         }
     }
 }

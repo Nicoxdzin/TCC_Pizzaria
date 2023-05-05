@@ -26,8 +26,6 @@ namespace model1
             this.usuario = string.Empty;
             this.senha = string.Empty;
             this.logado = false;
-
-
         }
 
     }

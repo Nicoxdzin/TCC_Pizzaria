@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="422872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="429016">
       <assemblyIdentity name="TCC_Pizzaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P/kD0WcOgdbivbeEPAdWZxkmXwops+v3z2rs6c/YkEE=</dsig:DigestValue>
+        <dsig:DigestValue>NQPM4DWetK3XUI87IP08jf2xlEjRotYAsHsaYLHB7hs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
