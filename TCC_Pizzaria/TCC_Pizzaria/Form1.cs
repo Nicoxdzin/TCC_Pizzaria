@@ -82,6 +82,11 @@ namespace TCC_Pizzaria
                 }
 
             }
+            else 
+            {
+                MsgSenhaIncorreta.Show("Senha Incorreta!");
+
+            }
 
         }
 
@@ -112,6 +117,16 @@ namespace TCC_Pizzaria
             if(con.conectar() == true){
                 MessageBox.Show("Conectado");
             }
+
+        }
+
+        private void txtSenha_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel4_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

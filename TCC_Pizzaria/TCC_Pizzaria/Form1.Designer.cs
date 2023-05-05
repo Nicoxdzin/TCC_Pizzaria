@@ -39,11 +39,12 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.MsgSenhaIncorreta = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2ShadowPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -160,6 +161,16 @@
             this.guna2ShadowPanel1.TabIndex = 23;
             this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(109, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
@@ -196,6 +207,7 @@
             this.txtSenha.Size = new System.Drawing.Size(336, 34);
             this.txtSenha.TabIndex = 27;
             this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged_1);
             // 
             // guna2ShadowPanel3
             // 
@@ -219,16 +231,16 @@
             this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel4.Size = new System.Drawing.Size(108, 40);
             this.guna2ShadowPanel4.TabIndex = 29;
+            this.guna2ShadowPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel4_Paint);
             // 
-            // button1
+            // MsgSenhaIncorreta
             // 
-            this.button1.Location = new System.Drawing.Point(109, 210);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.MsgSenhaIncorreta.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.MsgSenhaIncorreta.Caption = null;
+            this.MsgSenhaIncorreta.Icon = Guna.UI2.WinForms.MessageDialogIcon.Error;
+            this.MsgSenhaIncorreta.Parent = this;
+            this.MsgSenhaIncorreta.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.MsgSenhaIncorreta.Text = null;
             // 
             // Form1
             // 
@@ -275,5 +287,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
         private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2MessageDialog MsgSenhaIncorreta;
     }
 }
