@@ -91,6 +91,11 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomToolStripRenderer.cs" />
+    <Compile Include="db_tccDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_tccDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +171,17 @@
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="db_tccDataSet.xsc">
+      <DependentUpon>db_tccDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_tccDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_tccDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_tccDataSet.xss">
+      <DependentUpon>db_tccDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
