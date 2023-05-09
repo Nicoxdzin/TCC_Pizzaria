@@ -16,7 +16,7 @@ namespace Controller1
         static private string usuario = "root";//nome do usuario hostgator
         static private string senha = "";//Senha do bd
 
-        static public string StrCon = @"Data Source=SNCTP07LABF17\SQLEXPRESS;Initial Catalog=db_tcc;Integrated Security=True";
+        static public string StrCon = @"Data Source=DESKTOP-BANU95K\SQLSERVER;Initial Catalog=db_tcc;Integrated Security=True";
         public SqlConnection getConexao()
         {
             SqlConnection conn = new SqlConnection(StrCon);
