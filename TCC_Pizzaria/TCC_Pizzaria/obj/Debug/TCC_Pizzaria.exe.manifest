@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="37376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="70656">
       <assemblyIdentity name="Controller1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tBzoOD/QfhciZFl9JUnPcqhuhwq/w+U00W2N2yDuKN8=</dsig:DigestValue>
+        <dsig:DigestValue>dgRAs4uBBC+kuM0pGhVqfiOQszpCiHkh689TPt2/dEE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,24 +78,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="562136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="614872">
       <assemblyIdentity name="TCC_Pizzaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QlJ468spg3fPkvRjc8F0V46cnYhD2UMYDpPeJPp5qFQ=</dsig:DigestValue>
+        <dsig:DigestValue>EbxV3njY4R+nVraP+n7hCbOLPqk01P7tXoZa9URt6N4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="TCC_Pizzaria.exe.config" size="563">
+  <file name="TCC_Pizzaria.exe.config" size="904">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>+XQbNWBPjCFixPLVwUBqnw+REL/9AfM+9vwwjgpmOUk=</dsig:DigestValue>
+      <dsig:DigestValue>3ifCbtvn08fOaP81VczaiAY0ekEIgTEuDUS+fy35et8=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

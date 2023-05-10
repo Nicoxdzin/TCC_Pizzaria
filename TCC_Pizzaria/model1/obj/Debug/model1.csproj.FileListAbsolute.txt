@@ -16,3 +16,9 @@ C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\mod
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.csproj.CoreCompileInputs.cache
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.dll
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.pdb
+C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\bin\Debug\model1.dll
+C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\bin\Debug\model1.pdb
+C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.csproj.AssemblyReference.cache
+C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.csproj.CoreCompileInputs.cache
+C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.dll
+C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.pdb

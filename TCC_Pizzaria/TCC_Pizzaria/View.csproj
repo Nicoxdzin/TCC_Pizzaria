@@ -84,6 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cadastro_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro_Usuario.Designer.cs">
+      <DependentUpon>Cadastro_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,17 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomToolStripRenderer.cs" />
+    <Compile Include="db_testeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_testeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Listar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listar_Usuario.Designer.cs">
+      <DependentUpon>Listar_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +155,12 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro_Usuario.resx">
+      <DependentUpon>Cadastro_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listar_Usuario.resx">
+      <DependentUpon>Listar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +189,17 @@
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="db_testeDataSet.xsc">
+      <DependentUpon>db_testeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_testeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_testeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_testeDataSet.xss">
+      <DependentUpon>db_testeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
