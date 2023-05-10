@@ -40,6 +40,8 @@
             this.txtCliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.msgSucesso = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.msgErro = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2Panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -229,6 +231,24 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Produto";
             // 
+            // msgSucesso
+            // 
+            this.msgSucesso.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.msgSucesso.Caption = null;
+            this.msgSucesso.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
+            this.msgSucesso.Parent = null;
+            this.msgSucesso.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.msgSucesso.Text = "";
+            // 
+            // msgErro
+            // 
+            this.msgErro.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.msgErro.Caption = null;
+            this.msgErro.Icon = Guna.UI2.WinForms.MessageDialogIcon.Error;
+            this.msgErro.Parent = null;
+            this.msgErro.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.msgErro.Text = "";
+            // 
             // NovoPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,5 +278,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCliente;
         private Guna.UI2.WinForms.Guna2TextBox txtEndereco;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2MessageDialog msgSucesso;
+        private Guna.UI2.WinForms.Guna2MessageDialog msgErro;
     }
 }

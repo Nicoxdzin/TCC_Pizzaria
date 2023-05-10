@@ -11,7 +11,7 @@ namespace Controller1
     public class PedidoController
     {
 
-        Conexao conn = new Conexao();
+        public Conexao conn = new Conexao();
         public PedidoController() { }
 
         public Pedido Cadastrar(Pedido pedido)
@@ -29,5 +29,37 @@ namespace Controller1
             
             return pedido;
         }
+
+        public List<Pedido> ObterPedidos()
+        {
+            List<Pedido> pedidos = new List<Pedido>();
+
+  
+            {
+                string query = "SELECT * FROM tb_pedido";
+                SqlConnection conexao = conn.getConexao();
+                SqlCommand command = new SqlCommand(query, conexao);
+                conexao.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Pedido pedido = new Pedido();
+                    pedido.Id = reader.GetInt32(0);
+                    pedido.Produto = reader.GetString(1);
+                    pedido.Nome_cliente = reader.GetString(2);
+                    pedido.Telefone = reader.GetString(3);
+                    pedido.Endereco = reader.GetString(4);
+                    pedido.Observacoes = reader.GetString(5);
+
+                    pedidos.Add(pedido);
+                }
+
+                reader.Close();
+            }
+
+            return pedidos;
+        }
     }
+
 }
