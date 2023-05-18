@@ -88,6 +88,7 @@
             this.txtNome.Size = new System.Drawing.Size(336, 34);
             this.txtNome.TabIndex = 20;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label2
             // 
@@ -140,6 +141,7 @@
             this.btnEntrar.TabIndex = 19;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnEntrar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnEntrar_KeyPress);
             // 
             // guna2Elipse1
             // 

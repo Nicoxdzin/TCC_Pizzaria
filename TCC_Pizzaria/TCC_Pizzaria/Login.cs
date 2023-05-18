@@ -23,6 +23,7 @@ namespace TCC_Pizzaria
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.AcceptButton = btnEntrar;
             guna2ShadowForm1.SetShadowForm(this);
 
         }
@@ -126,6 +127,16 @@ namespace TCC_Pizzaria
         }
 
         private void guna2ShadowPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }

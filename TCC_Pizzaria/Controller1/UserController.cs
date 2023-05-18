@@ -40,8 +40,21 @@ namespace Controller
             return usu;
         }
 
-        public void Cadastrar()
+        public Cliente Cadastrar(Cliente cadastro)
         {
+            String cadastrar = "INSERT INTO tb_cadastro values (@nome,@cpf,@numero_tel,@cep,@numero_casa,@referencia)";
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(cadastrar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@nome", cadastro.nome);
+            comando.Parameters.AddWithValue("@cpf", cadastro.cpf);
+            comando.Parameters.AddWithValue("@numero_tel", cadastro.numero_tel);
+            comando.Parameters.AddWithValue("@cep", cadastro.cep);
+            comando.Parameters.AddWithValue("@numero_casa", cadastro.numero_casa);
+            comando.Parameters.AddWithValue("@referencia", cadastro.referencia);
+            comando.ExecuteReader();
+
+            return cadastro;
 
         }
 
@@ -49,9 +62,36 @@ namespace Controller
         {
 
         }
-        public void Listar()
+        public List<Cliente> ObterClientes()
         {
+            List<Cliente> clientes = new List<Cliente>();
 
+
+            {
+                string query = "SELECT * FROM tb_cadastro";
+                SqlConnection conexao = conn.getConexao();
+                SqlCommand command = new SqlCommand(query, conexao);
+                conexao.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Cliente cadastro = new Cliente();
+                    cadastro.Id = reader.GetInt32(0);
+                    cadastro.nome = reader.GetString(1);
+                    cadastro.cpf = reader.GetString(2);
+                    cadastro.numero_tel = reader.GetString(3);
+                    cadastro.cep = reader.GetString(4);
+                    cadastro.numero_casa = reader.GetString(5);
+                    cadastro.referencia = reader.GetString(6);
+
+                    clientes.Add(cadastro);
+                }
+
+                reader.Close();
+            }
+
+            return clientes;
         }
 
         public DataTable Getperfil()

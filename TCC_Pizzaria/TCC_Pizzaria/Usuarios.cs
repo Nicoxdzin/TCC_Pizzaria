@@ -46,12 +46,12 @@ namespace TCC_Pizzaria
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Cadastro_Usuario());
+            OpenChildForm(new CadastroCliente());
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Listar_Usuario());
+            OpenChildForm(new ListaCliente());
         }
     }
 }
