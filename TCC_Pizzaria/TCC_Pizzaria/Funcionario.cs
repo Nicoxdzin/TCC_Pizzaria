@@ -116,6 +116,7 @@ namespace TCC_Pizzaria
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Pedidos());
+            label1.Text = "Pedidos";
         }
 
         private void Usuario_Click(object sender, EventArgs e)

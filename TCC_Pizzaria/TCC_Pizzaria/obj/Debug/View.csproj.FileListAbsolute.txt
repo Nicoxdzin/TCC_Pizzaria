@@ -46,7 +46,6 @@ C:\Users\Aluno\source\repos\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\Vie
 C:\Users\Aluno\source\repos\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Admin.resources
 C:\Users\Aluno\source\repos\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Funcionario.resources
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Admin.resources
-C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Form1.resources
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Funcionario.resources
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\Controller1.dll
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\model1.dll
@@ -83,8 +82,6 @@ C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.ListaPedido.resources
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.NovoPedido.resources
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Pedidos.resources
-C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.AssemblyReference.cache
-C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\TCC_Pizzaria.exe.manifest
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\TCC_Pizzaria.application
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.ListaPedido.resources
@@ -123,3 +120,7 @@ C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug
 C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.CopyComplete
 C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.exe
 C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.pdb
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csprojAssemblyReference.cache
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Cadastro_Usuario.resources
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Listar_Usuario.resources
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Login.resources

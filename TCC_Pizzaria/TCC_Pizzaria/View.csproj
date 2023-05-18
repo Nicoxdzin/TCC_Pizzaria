@@ -97,11 +97,6 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomToolStripRenderer.cs" />
-    <Compile Include="db_testeDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>db_testeDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Listar_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,17 +184,6 @@
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="db_testeDataSet.xsc">
-      <DependentUpon>db_testeDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="db_testeDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>db_testeDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="db_testeDataSet.xss">
-      <DependentUpon>db_testeDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

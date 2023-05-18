@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controller1;
-using model1;
 
 namespace TCC_Pizzaria
 {
@@ -23,7 +22,7 @@ namespace TCC_Pizzaria
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
-            if (txtProduto.Text == "" || txtCliente.Text == "" || txtTelefone.Text == "" || txtEndereco.Text == "" || txtObs.Text == "")
+            if (txtProduto1.Text == "" || txtCliente.Text == "" || txtTelefone.Text == "" || txtEndereco.Text == "" || txtProduto1.Text == "")
             {
                 // Exibe uma mensagem de erro caso algum dos campos esteja vazio.
                 msgErro.Show("Preencha todos os campos para realizar o cadastro.");
@@ -32,11 +31,11 @@ namespace TCC_Pizzaria
             {
                 PedidoController pedido_controller = new PedidoController();
                 Pedido pedido = new Pedido();
-                pedido.Produto = txtProduto.Text;
+                pedido.Produto = txtProduto1.Text;
                 pedido.Nome_cliente = txtCliente.Text;
                 pedido.Telefone = txtTelefone.Text;
                 pedido.Endereco = txtEndereco.Text;
-                pedido.Observacoes = txtObs.Text;
+                pedido.Observacoes = txtProduto1.Text;
                 pedido = pedido_controller.Cadastrar(pedido);
 
                 if (pedido.Id < 0)
@@ -57,6 +56,60 @@ namespace TCC_Pizzaria
         private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radio1.Checked)
+            {
+                lblSabor1.Enabled = true;
+                lblSabor2.Enabled = false;
+                lblSabor3.Enabled = false;
+                txtProduto1.Enabled = true;
+                txtProduto2.Enabled = false;
+                txtProduto3.Enabled = false;
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NovoPedido_Load(object sender, EventArgs e)
+        {
+            lblSabor1.Enabled = false;
+            lblSabor2.Enabled = false;
+            lblSabor3.Enabled = false;
+            txtProduto1.Enabled = false;
+            txtProduto2.Enabled = false;
+            txtProduto3.Enabled = false;
+        }
+
+        private void radio2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radio2.Checked)
+            {
+                lblSabor1.Enabled = true;
+                lblSabor2.Enabled = true;
+                lblSabor3.Enabled = false;
+                txtProduto1.Enabled = true;
+                txtProduto2.Enabled = true;
+                txtProduto3.Enabled = false;
+            }
+        }
+
+        private void radio3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radio3.Checked)
+            {
+                lblSabor1.Enabled = true;
+                lblSabor2.Enabled = true;
+                lblSabor3.Enabled = true;
+                txtProduto1.Enabled = true;
+                txtProduto2.Enabled = true;
+                txtProduto3.Enabled = true;
+            }
         }
     }
 }

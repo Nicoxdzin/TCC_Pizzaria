@@ -29,17 +29,25 @@
         private void InitializeComponent()
         {
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtProduto = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblSabor1 = new System.Windows.Forms.Label();
+            this.lblSabor2 = new System.Windows.Forms.Label();
+            this.lblSabor3 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtProduto2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtProduto3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtProduto1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.radio3 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radio2 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radio1 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.txtObs = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTelefone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCliente = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             this.msgSucesso = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.msgErro = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2Panel4.SuspendLayout();
@@ -47,105 +55,262 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.guna2Panel4.BorderRadius = 10;
-            this.guna2Panel4.Controls.Add(this.btnCadastrar);
-            this.guna2Panel4.Controls.Add(this.txtProduto);
-            this.guna2Panel4.Controls.Add(this.label9);
-            this.guna2Panel4.Controls.Add(this.label6);
-            this.guna2Panel4.Controls.Add(this.label5);
-            this.guna2Panel4.Controls.Add(this.label4);
+            this.guna2Panel4.Controls.Add(this.label7);
+            this.guna2Panel4.Controls.Add(this.lblSabor1);
+            this.guna2Panel4.Controls.Add(this.lblSabor2);
+            this.guna2Panel4.Controls.Add(this.lblSabor3);
+            this.guna2Panel4.Controls.Add(this.label3);
+            this.guna2Panel4.Controls.Add(this.label2);
+            this.guna2Panel4.Controls.Add(this.label10);
+            this.guna2Panel4.Controls.Add(this.txtProduto2);
+            this.guna2Panel4.Controls.Add(this.txtProduto3);
+            this.guna2Panel4.Controls.Add(this.txtProduto1);
+            this.guna2Panel4.Controls.Add(this.radio3);
+            this.guna2Panel4.Controls.Add(this.radio2);
+            this.guna2Panel4.Controls.Add(this.radio1);
             this.guna2Panel4.Controls.Add(this.txtObs);
+            this.guna2Panel4.Controls.Add(this.txtEndereco);
             this.guna2Panel4.Controls.Add(this.txtTelefone);
             this.guna2Panel4.Controls.Add(this.txtCliente);
-            this.guna2Panel4.Controls.Add(this.txtEndereco);
-            this.guna2Panel4.Controls.Add(this.label2);
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
+            this.guna2Panel4.Controls.Add(this.label1);
+            this.guna2Panel4.Controls.Add(this.btnCadastrar);
+            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.guna2Panel4.Location = new System.Drawing.Point(19, 17);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(860, 484);
             this.guna2Panel4.TabIndex = 3;
             this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
-            // btnCadastrar
+            // label7
             // 
-            this.btnCadastrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCadastrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCadastrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(539, 353);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(215, 55);
-            this.btnCadastrar.TabIndex = 20;
-            this.btnCadastrar.Text = "Cadastrar pedido";
-            this.btnCadastrar.Click += new System.EventHandler(this.guna2Button8_Click);
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(304, 175);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 15);
+            this.label7.TabIndex = 59;
+            this.label7.Text = "Observações";
             // 
-            // txtProduto
+            // lblSabor1
             // 
-            this.txtProduto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProduto.DefaultText = "";
-            this.txtProduto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProduto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProduto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtProduto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto.Location = new System.Drawing.Point(97, 59);
-            this.txtProduto.Name = "txtProduto";
-            this.txtProduto.PasswordChar = '\0';
-            this.txtProduto.PlaceholderText = "";
-            this.txtProduto.SelectedText = "";
-            this.txtProduto.Size = new System.Drawing.Size(215, 36);
-            this.txtProduto.TabIndex = 15;
+            this.lblSabor1.AutoSize = true;
+            this.lblSabor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.lblSabor1.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSabor1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSabor1.Location = new System.Drawing.Point(50, 175);
+            this.lblSabor1.Name = "lblSabor1";
+            this.lblSabor1.Size = new System.Drawing.Size(52, 15);
+            this.lblSabor1.TabIndex = 58;
+            this.lblSabor1.Text = "Sabor1";
             // 
-            // label9
+            // lblSabor2
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.label9.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(315, 131);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 15);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Observações";
+            this.lblSabor2.AutoSize = true;
+            this.lblSabor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.lblSabor2.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSabor2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSabor2.Location = new System.Drawing.Point(50, 233);
+            this.lblSabor2.Name = "lblSabor2";
+            this.lblSabor2.Size = new System.Drawing.Size(56, 15);
+            this.lblSabor2.TabIndex = 57;
+            this.lblSabor2.Text = "Sabor 2";
             // 
-            // label6
+            // lblSabor3
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.label6.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(94, 131);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Endereço";
+            this.lblSabor3.AutoSize = true;
+            this.lblSabor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.lblSabor3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSabor3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSabor3.Location = new System.Drawing.Point(50, 297);
+            this.lblSabor3.Name = "lblSabor3";
+            this.lblSabor3.Size = new System.Drawing.Size(56, 15);
+            this.lblSabor3.TabIndex = 56;
+            this.lblSabor3.Text = "Sabor 3";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.label5.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(536, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Telefone";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(56, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(154, 15);
+            this.label3.TabIndex = 55;
+            this.label3.Text = "Quantidade de sabores";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.label4.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(315, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Cliente";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label2.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(561, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Endereço";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(304, 47);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(62, 15);
+            this.label10.TabIndex = 53;
+            this.label10.Text = "Telefone";
+            // 
+            // txtProduto2
+            // 
+            this.txtProduto2.BackColor = System.Drawing.Color.Transparent;
+            this.txtProduto2.BorderColor = System.Drawing.Color.Gray;
+            this.txtProduto2.BorderRadius = 5;
+            this.txtProduto2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProduto2.DefaultText = "";
+            this.txtProduto2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProduto2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProduto2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProduto2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProduto2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto2.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtProduto2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtProduto2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto2.Location = new System.Drawing.Point(53, 251);
+            this.txtProduto2.Name = "txtProduto2";
+            this.txtProduto2.PasswordChar = '\0';
+            this.txtProduto2.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtProduto2.PlaceholderText = "Segundo sabor";
+            this.txtProduto2.SelectedText = "";
+            this.txtProduto2.Size = new System.Drawing.Size(235, 34);
+            this.txtProduto2.TabIndex = 51;
+            // 
+            // txtProduto3
+            // 
+            this.txtProduto3.BackColor = System.Drawing.Color.Transparent;
+            this.txtProduto3.BorderColor = System.Drawing.Color.Gray;
+            this.txtProduto3.BorderRadius = 5;
+            this.txtProduto3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProduto3.DefaultText = "";
+            this.txtProduto3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProduto3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProduto3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProduto3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProduto3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto3.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtProduto3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtProduto3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto3.Location = new System.Drawing.Point(50, 315);
+            this.txtProduto3.Name = "txtProduto3";
+            this.txtProduto3.PasswordChar = '\0';
+            this.txtProduto3.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtProduto3.PlaceholderText = "Terceiro Sabor";
+            this.txtProduto3.SelectedText = "";
+            this.txtProduto3.Size = new System.Drawing.Size(238, 34);
+            this.txtProduto3.TabIndex = 48;
+            // 
+            // txtProduto1
+            // 
+            this.txtProduto1.BackColor = System.Drawing.Color.Transparent;
+            this.txtProduto1.BorderColor = System.Drawing.Color.Gray;
+            this.txtProduto1.BorderRadius = 5;
+            this.txtProduto1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProduto1.DefaultText = "";
+            this.txtProduto1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtProduto1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtProduto1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProduto1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtProduto1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto1.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtProduto1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtProduto1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto1.Location = new System.Drawing.Point(50, 193);
+            this.txtProduto1.Name = "txtProduto1";
+            this.txtProduto1.PasswordChar = '\0';
+            this.txtProduto1.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtProduto1.PlaceholderText = "Primeiro sabor";
+            this.txtProduto1.SelectedText = "";
+            this.txtProduto1.Size = new System.Drawing.Size(238, 34);
+            this.txtProduto1.TabIndex = 45;
+            // 
+            // radio3
+            // 
+            this.radio3.AutoSize = true;
+            this.radio3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.radio3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio3.CheckedState.BorderThickness = 0;
+            this.radio3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio3.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio3.CheckedState.InnerOffset = -4;
+            this.radio3.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio3.Location = new System.Drawing.Point(175, 143);
+            this.radio3.Name = "radio3";
+            this.radio3.Size = new System.Drawing.Size(35, 21);
+            this.radio3.TabIndex = 43;
+            this.radio3.Text = "3";
+            this.radio3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio3.UncheckedState.BorderThickness = 2;
+            this.radio3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio3.UseVisualStyleBackColor = false;
+            this.radio3.CheckedChanged += new System.EventHandler(this.radio3_CheckedChanged);
+            // 
+            // radio2
+            // 
+            this.radio2.AutoSize = true;
+            this.radio2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.radio2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio2.CheckedState.BorderThickness = 0;
+            this.radio2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio2.CheckedState.InnerOffset = -4;
+            this.radio2.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio2.Location = new System.Drawing.Point(119, 143);
+            this.radio2.Name = "radio2";
+            this.radio2.Size = new System.Drawing.Size(35, 21);
+            this.radio2.TabIndex = 42;
+            this.radio2.Text = "2";
+            this.radio2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio2.UncheckedState.BorderThickness = 2;
+            this.radio2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio2.UseVisualStyleBackColor = false;
+            this.radio2.CheckedChanged += new System.EventHandler(this.radio2_CheckedChanged);
+            // 
+            // radio1
+            // 
+            this.radio1.AutoSize = true;
+            this.radio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.radio1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio1.CheckedState.BorderThickness = 0;
+            this.radio1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio1.CheckedState.InnerOffset = -4;
+            this.radio1.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio1.Location = new System.Drawing.Point(63, 143);
+            this.radio1.Name = "radio1";
+            this.radio1.Size = new System.Drawing.Size(35, 21);
+            this.radio1.TabIndex = 41;
+            this.radio1.Text = "1";
+            this.radio1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio1.UncheckedState.BorderThickness = 2;
+            this.radio1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio1.UseVisualStyleBackColor = false;
+            this.radio1.CheckedChanged += new System.EventHandler(this.guna2RadioButton1_CheckedChanged);
             // 
             // txtObs
             // 
+            this.txtObs.BackColor = System.Drawing.Color.Transparent;
+            this.txtObs.BorderColor = System.Drawing.Color.Gray;
+            this.txtObs.BorderRadius = 5;
             this.txtObs.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtObs.DefaultText = "";
             this.txtObs.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -153,56 +318,23 @@
             this.txtObs.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtObs.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtObs.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtObs.Font = new System.Drawing.Font("Lucida Sans", 8.25F);
+            this.txtObs.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtObs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtObs.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtObs.Location = new System.Drawing.Point(318, 149);
+            this.txtObs.Location = new System.Drawing.Point(307, 193);
             this.txtObs.Name = "txtObs";
             this.txtObs.PasswordChar = '\0';
-            this.txtObs.PlaceholderText = "";
+            this.txtObs.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtObs.PlaceholderText = "Observações do cliente";
             this.txtObs.SelectedText = "";
-            this.txtObs.Size = new System.Drawing.Size(436, 173);
-            this.txtObs.TabIndex = 6;
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefone.DefaultText = "";
-            this.txtTelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTelefone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTelefone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefone.Font = new System.Drawing.Font("Lucida Sans", 8.25F);
-            this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTelefone.Location = new System.Drawing.Point(539, 59);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.PasswordChar = '\0';
-            this.txtTelefone.PlaceholderText = "";
-            this.txtTelefone.SelectedText = "";
-            this.txtTelefone.Size = new System.Drawing.Size(215, 36);
-            this.txtTelefone.TabIndex = 5;
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCliente.DefaultText = "";
-            this.txtCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCliente.Font = new System.Drawing.Font("Lucida Sans", 8.25F);
-            this.txtCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCliente.Location = new System.Drawing.Point(318, 59);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.PasswordChar = '\0';
-            this.txtCliente.PlaceholderText = "";
-            this.txtCliente.SelectedText = "";
-            this.txtCliente.Size = new System.Drawing.Size(215, 36);
-            this.txtCliente.TabIndex = 4;
+            this.txtObs.Size = new System.Drawing.Size(495, 155);
+            this.txtObs.TabIndex = 38;
             // 
             // txtEndereco
             // 
+            this.txtEndereco.BackColor = System.Drawing.Color.Transparent;
+            this.txtEndereco.BorderColor = System.Drawing.Color.Gray;
+            this.txtEndereco.BorderRadius = 5;
             this.txtEndereco.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEndereco.DefaultText = "";
             this.txtEndereco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -210,26 +342,93 @@
             this.txtEndereco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEndereco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEndereco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEndereco.Font = new System.Drawing.Font("Lucida Sans", 8.25F);
+            this.txtEndereco.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEndereco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEndereco.Location = new System.Drawing.Point(97, 149);
+            this.txtEndereco.Location = new System.Drawing.Point(564, 67);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.PasswordChar = '\0';
-            this.txtEndereco.PlaceholderText = "";
+            this.txtEndereco.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtEndereco.PlaceholderText = "Endereço";
             this.txtEndereco.SelectedText = "";
-            this.txtEndereco.Size = new System.Drawing.Size(215, 173);
-            this.txtEndereco.TabIndex = 3;
+            this.txtEndereco.Size = new System.Drawing.Size(238, 34);
+            this.txtEndereco.TabIndex = 32;
             // 
-            // label2
+            // txtTelefone
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(210)))), ((int)(((byte)(203)))));
-            this.label2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(94, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Produto";
+            this.txtTelefone.BackColor = System.Drawing.Color.Transparent;
+            this.txtTelefone.BorderColor = System.Drawing.Color.Gray;
+            this.txtTelefone.BorderRadius = 5;
+            this.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTelefone.DefaultText = "";
+            this.txtTelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTelefone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTelefone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefone.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefone.Location = new System.Drawing.Point(307, 66);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.PasswordChar = '\0';
+            this.txtTelefone.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtTelefone.PlaceholderText = "Telefone do cliente";
+            this.txtTelefone.SelectedText = "";
+            this.txtTelefone.Size = new System.Drawing.Size(238, 34);
+            this.txtTelefone.TabIndex = 29;
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.BackColor = System.Drawing.Color.Transparent;
+            this.txtCliente.BorderColor = System.Drawing.Color.Gray;
+            this.txtCliente.BorderRadius = 5;
+            this.txtCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCliente.DefaultText = "";
+            this.txtCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCliente.Font = new System.Drawing.Font("Lucida Sans", 9.75F);
+            this.txtCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCliente.Location = new System.Drawing.Point(50, 66);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.PasswordChar = '\0';
+            this.txtCliente.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtCliente.PlaceholderText = "Nome do cliente";
+            this.txtCliente.SelectedText = "";
+            this.txtCliente.Size = new System.Drawing.Size(238, 34);
+            this.txtCliente.TabIndex = 26;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(56, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Cliente";
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BorderRadius = 10;
+            this.btnCadastrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCadastrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCadastrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.btnCadastrar.Location = new System.Drawing.Point(587, 399);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(215, 55);
+            this.btnCadastrar.TabIndex = 20;
+            this.btnCadastrar.Text = "Cadastrar pedido";
+            this.btnCadastrar.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
             // msgSucesso
             // 
@@ -253,11 +452,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 522);
             this.Controls.Add(this.guna2Panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NovoPedido";
             this.Text = "NovoPedido";
+            this.Load += new System.EventHandler(this.NovoPedido_Load);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -268,17 +469,25 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Button btnCadastrar;
-        private Guna.UI2.WinForms.Guna2TextBox txtProduto;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtObs;
-        private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
-        private Guna.UI2.WinForms.Guna2TextBox txtCliente;
-        private Guna.UI2.WinForms.Guna2TextBox txtEndereco;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2MessageDialog msgSucesso;
         private Guna.UI2.WinForms.Guna2MessageDialog msgErro;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblSabor1;
+        private System.Windows.Forms.Label lblSabor2;
+        private System.Windows.Forms.Label lblSabor3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txtProduto2;
+        private Guna.UI2.WinForms.Guna2TextBox txtProduto3;
+        private Guna.UI2.WinForms.Guna2TextBox txtProduto1;
+        private Guna.UI2.WinForms.Guna2RadioButton radio3;
+        private Guna.UI2.WinForms.Guna2RadioButton radio2;
+        private Guna.UI2.WinForms.Guna2RadioButton radio1;
+        private Guna.UI2.WinForms.Guna2TextBox txtObs;
+        private Guna.UI2.WinForms.Guna2TextBox txtEndereco;
+        private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
+        private Guna.UI2.WinForms.Guna2TextBox txtCliente;
+        private System.Windows.Forms.Label label1;
     }
 }
