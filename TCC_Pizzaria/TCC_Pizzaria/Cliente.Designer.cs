@@ -1,6 +1,6 @@
 ﻿namespace TCC_Pizzaria
 {
-    partial class Usuarios
+    partial class Cliente
     {
         /// <summary>
         /// Required designer variable.
@@ -62,7 +62,7 @@
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(447, 49);
             this.guna2Button7.TabIndex = 1;
-            this.guna2Button7.Text = "Lista de Usuários";
+            this.guna2Button7.Text = "Lista de Clientes";
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // guna2Button6
@@ -78,7 +78,7 @@
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(458, 49);
             this.guna2Button6.TabIndex = 0;
-            this.guna2Button6.Text = "Cadastrar Novo Usuário";
+            this.guna2Button6.Text = "Cadastrar Novo Cliente";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // pnlUsuario
@@ -88,7 +88,7 @@
             this.pnlUsuario.Size = new System.Drawing.Size(903, 511);
             this.pnlUsuario.TabIndex = 3;
             // 
-            // Usuarios
+            // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +96,7 @@
             this.Controls.Add(this.pnlUsuario);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Usuarios";
+            this.Name = "Cliente";
             this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.Usuarios_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);

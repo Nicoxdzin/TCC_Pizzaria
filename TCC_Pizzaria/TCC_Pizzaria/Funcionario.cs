@@ -109,7 +109,7 @@ namespace TCC_Pizzaria
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Usuarios());
+            OpenChildForm(new Cliente());
             label1.Text = "Usuários";
         }
 

@@ -18,6 +18,8 @@ namespace TCC_Pizzaria
         public NovoPedido()
         {
             InitializeComponent();
+            
+
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
@@ -110,6 +112,47 @@ namespace TCC_Pizzaria
                 txtProduto2.Enabled = true;
                 txtProduto3.Enabled = true;
             }
+        }
+
+        private void txtCliente_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                txtTelefone.Focus();
+            }
+        }
+
+        private void txtTelefone_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                txtEndereco.Focus();
+            }
+        }
+
+        private void txtEndereco_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                txtObs.Focus();
+            }
+        }
+
+        private void txtObs_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                btnCadastrar.PerformClick();
+            }
+        }
+
+        private void NovoPedido_KeyDown(object sender, KeyEventArgs e)
+        {
+            
         }
     }
 }

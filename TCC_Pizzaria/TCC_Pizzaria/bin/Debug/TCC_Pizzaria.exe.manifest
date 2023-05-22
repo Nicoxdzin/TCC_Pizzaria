@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wXZ459dnWfrENkuq/Son1VnXzVd+TurGcgpKYBndl5A=</dsig:DigestValue>
+        <dsig:DigestValue>DC9MPNrfJLjLk2BQVX3xelY8caXkyo3Natz3M6iCSR0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="580056">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="582104">
       <assemblyIdentity name="TCC_Pizzaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>89d43dzlZIA5aVMzA/geN9Cf1y4v3YkG3FrVyMH4lIU=</dsig:DigestValue>
+        <dsig:DigestValue>0Ia6EPd8M8VigLwryRznnDwk1gejImCG2bIYY49jk1c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

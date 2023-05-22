@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TCC_Pizzaria
 {
-    public partial class Usuarios : Form
+    public partial class Cliente : Form
     {
-        public Usuarios()
+        public Cliente()
         {
             InitializeComponent();
         }
