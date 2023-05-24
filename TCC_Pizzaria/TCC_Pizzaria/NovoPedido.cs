@@ -26,7 +26,6 @@ namespace TCC_Pizzaria
         {
             if (txtProduto1.Text == "" || txtCliente.Text == "" || txtTelefone.Text == "" || txtEndereco.Text == "" || txtProduto1.Text == "")
             {
-                // Exibe uma mensagem de erro caso algum dos campos esteja vazio.
                 msgErro.Show("Preencha todos os campos para realizar o cadastro.");
             }
             else
@@ -41,13 +40,11 @@ namespace TCC_Pizzaria
                 pedido = pedido_controller.Cadastrar(pedido);
 
                 if (pedido.Id < 0)
-                {
-                    // O cadastro foi realizado com sucesso.                
+                {            
                     msgErro.Show("Erro ao cadastrar pedido");
                 }
                 else
                 {
-                    // Ocorreu um erro ao realizar o cadastro.
                     msgSucesso.Show("Pedido cadastrado com sucesso!");
 
 
@@ -151,6 +148,11 @@ namespace TCC_Pizzaria
         }
 
         private void NovoPedido_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             
         }

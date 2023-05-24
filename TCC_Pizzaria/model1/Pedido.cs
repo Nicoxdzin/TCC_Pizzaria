@@ -14,6 +14,7 @@ namespace model1
         public string Telefone { get; set; }
         public string Endereco { get; set; }
         public string Observacoes { get; set; }
+        public DateTime DataPedido { get; set; }
 
         public Pedido()
         {
@@ -23,7 +24,8 @@ namespace model1
             this.Telefone = string.Empty;
             this.Endereco = string.Empty;
             this.Observacoes = string.Empty;
+            this.DataPedido = DateTime.Now;
 
-        }
+    }
     }
 }

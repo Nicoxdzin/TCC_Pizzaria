@@ -16,7 +16,7 @@ namespace Controller1
 
         public Pedido Cadastrar(Pedido pedido)
         {
-            String cadastrar = "INSERT INTO tb_pedido values (@Produto,@Nome_cliente,@Telefone,@Endereco,@Observacoes)";
+            String cadastrar = "INSERT INTO tb_pedido values (@Produto,@Nome_cliente,@Telefone,@Endereco,@Observacoes,@DataPedido)";
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(cadastrar, conexao);
             conexao.Open();
@@ -25,6 +25,7 @@ namespace Controller1
             comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
             comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
             comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
+            comando.Parameters.AddWithValue("@DataPedido", pedido.DataPedido);
             comando.ExecuteReader();
             
             return pedido;
@@ -40,6 +41,18 @@ namespace Controller1
             comando.ExecuteNonQuery();
 
             return pedido;
+        }
+
+        public List<Pedido> PesquisarPedidoNome(string termoPesquisa)
+        {
+            List<Pedido> pedidos = ObterPedidos();
+
+            // Filtrar os pedidos com base no termo de pesquisa (usando comparação de string sem diferenciação de maiúsculas/minúsculas)
+            List<Pedido> pesquisaNome = pedidos.Where(p =>
+                p.Nome_cliente.IndexOf(termoPesquisa, StringComparison.OrdinalIgnoreCase) >= 0 //||
+            ).ToList();
+
+            return pesquisaNome;
         }
 
         public List<Pedido> ObterPedidos()
@@ -71,6 +84,17 @@ namespace Controller1
             }
 
             return pedidos;
+        }
+
+        public List<Pedido> ObterPedidosPorData(DateTime dataPesquisa)
+        {
+            List<Pedido> pedidos = ObterPedidos();
+
+            List<Pedido> pedidosFiltrados = pedidos.Where(p =>
+                p.DataPedido.Date == dataPesquisa.Date
+            ).ToList();
+
+            return pedidosFiltrados;
         }
     }
 
