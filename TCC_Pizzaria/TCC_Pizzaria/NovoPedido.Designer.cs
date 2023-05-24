@@ -79,6 +79,7 @@
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.guna2Panel4.Location = new System.Drawing.Point(19, 17);
             this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.Depth = 50;
             this.guna2Panel4.Size = new System.Drawing.Size(860, 484);
             this.guna2Panel4.TabIndex = 3;
             this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
@@ -308,6 +309,7 @@
             // 
             // txtObs
             // 
+            this.txtObs.Animated = true;
             this.txtObs.BackColor = System.Drawing.Color.Transparent;
             this.txtObs.BorderColor = System.Drawing.Color.Gray;
             this.txtObs.BorderRadius = 5;
@@ -326,6 +328,7 @@
             this.txtObs.PasswordChar = '\0';
             this.txtObs.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtObs.PlaceholderText = "Observações do cliente";
+            this.txtObs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtObs.SelectedText = "";
             this.txtObs.Size = new System.Drawing.Size(495, 155);
             this.txtObs.TabIndex = 38;

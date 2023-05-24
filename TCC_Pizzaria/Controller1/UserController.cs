@@ -94,30 +94,5 @@ namespace Controller
             return clientes;
         }
 
-        public DataTable Getperfil()
-        {
-            SqlConnection conexao = conn.getConexao();
-            string SQL = "SELECT * FROM perfil";
-            DataTable dtPerfil = new DataTable();
-            try
-            {
-                conexao.Open();
-                SqlCommand comando = new SqlCommand(SQL, conexao);
-                SqlDataAdapter dados = new SqlDataAdapter(comando);
-
-                dados.Fill(dtPerfil);
-
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-            }
-            return dtPerfil;
-        }
     }
 }

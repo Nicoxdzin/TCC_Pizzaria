@@ -142,5 +142,32 @@ namespace TCC_Pizzaria
             }
             label1.Text = "Início";
         }
+
+        private void guna2ShadowPanel1_Paint_2(object sender, PaintEventArgs e)
+        {
+         
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Pedidos());
+            label1.Text = "Pedidos";
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Cliente());
+            label1.Text = "Clientes";
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

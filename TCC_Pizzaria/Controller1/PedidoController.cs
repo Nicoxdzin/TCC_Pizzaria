@@ -30,6 +30,18 @@ namespace Controller1
             return pedido;
         }
 
+        public Pedido DeletarPedido(Pedido pedido)
+        {
+            string deletar = "DELETE FROM tb_pedido WHERE id = @Id";
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(deletar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@Id", pedido.Id);
+            comando.ExecuteNonQuery();
+
+            return pedido;
+        }
+
         public List<Pedido> ObterPedidos()
         {
             List<Pedido> pedidos = new List<Pedido>();
