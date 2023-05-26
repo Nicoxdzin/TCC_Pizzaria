@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.lblSabor1 = new System.Windows.Forms.Label();
             this.lblSabor2 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             this.msgSucesso = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.msgErro = new Guna.UI2.WinForms.Guna2MessageDialog();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,23 @@
             this.guna2Panel4.Size = new System.Drawing.Size(860, 524);
             this.guna2Panel4.TabIndex = 3;
             this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackgroundImage = global::TCC_Pizzaria.Properties.Resources.botao_voltar;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.guna2Button1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(50, 45);
+            this.guna2Button1.TabIndex = 60;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label7
             // 
@@ -444,7 +461,7 @@
             this.msgSucesso.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
             this.msgSucesso.Caption = null;
             this.msgSucesso.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
-            this.msgSucesso.Parent = this;
+            this.msgSucesso.Parent = null;
             this.msgSucesso.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.msgSucesso.Text = "";
             // 
@@ -456,23 +473,6 @@
             this.msgErro.Parent = null;
             this.msgErro.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.msgErro.Text = "";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackgroundImage = global::TCC_Pizzaria.Properties.Resources.botao_voltar;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.guna2Button1.Location = new System.Drawing.Point(3, 3);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(50, 45);
-            this.guna2Button1.TabIndex = 60;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // NovoPedido
             // 

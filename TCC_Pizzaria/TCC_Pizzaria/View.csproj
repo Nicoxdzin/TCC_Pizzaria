@@ -73,6 +73,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -97,6 +98,12 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomToolStripRenderer.cs" />
+    <Compile Include="GraficoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficoPedido.Designer.cs">
+      <DependentUpon>GraficoPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficoPedido.resx">
+      <DependentUpon>GraficoPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaCliente.resx">
       <DependentUpon>ListaCliente.cs</DependentUpon>
