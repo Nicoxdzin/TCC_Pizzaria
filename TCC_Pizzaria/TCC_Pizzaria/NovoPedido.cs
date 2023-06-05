@@ -61,9 +61,6 @@ namespace TCC_Pizzaria
         {
             if (radio1.Checked)
             {
-                lblSabor1.Enabled = true;
-                lblSabor2.Enabled = false;
-                lblSabor3.Enabled = false;
                 txtProduto1.Enabled = true;
                 txtProduto2.Enabled = false;
                 txtProduto3.Enabled = false;
@@ -77,9 +74,7 @@ namespace TCC_Pizzaria
 
         private void NovoPedido_Load(object sender, EventArgs e)
         {
-            lblSabor1.Enabled = false;
-            lblSabor2.Enabled = false;
-            lblSabor3.Enabled = false;
+
             txtProduto1.Enabled = false;
             txtProduto2.Enabled = false;
             txtProduto3.Enabled = false;
@@ -89,9 +84,6 @@ namespace TCC_Pizzaria
         {
             if (radio2.Checked)
             {
-                lblSabor1.Enabled = true;
-                lblSabor2.Enabled = true;
-                lblSabor3.Enabled = false;
                 txtProduto1.Enabled = true;
                 txtProduto2.Enabled = true;
                 txtProduto3.Enabled = false;
@@ -101,10 +93,7 @@ namespace TCC_Pizzaria
         private void radio3_CheckedChanged(object sender, EventArgs e)
         {
             if (radio3.Checked)
-            {
-                lblSabor1.Enabled = true;
-                lblSabor2.Enabled = true;
-                lblSabor3.Enabled = true;
+            {         
                 txtProduto1.Enabled = true;
                 txtProduto2.Enabled = true;
                 txtProduto3.Enabled = true;
@@ -154,7 +143,12 @@ namespace TCC_Pizzaria
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
+        }
+
+        private void txtProduto1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

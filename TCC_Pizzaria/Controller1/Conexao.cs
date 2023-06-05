@@ -11,12 +11,9 @@ namespace Controller1
     public class Conexao
     {
         //variaveis de conexao
-        static private string servidor = "localhost";//caminho do servidor
-        static private string bancodedados = "bd_teste";//nome do bd
-        static private string usuario = "root";//nome do usuario hostgator
-        static private string senha = "";//Senha do bd
+   
 
-        static public string StrCon = @"Data Source=SNCTP07LABF17\SQLEXPRESS;Initial Catalog=db_tcc;Integrated Security=True";
+        static public string StrCon = @"Data Source=SNCTP07LABF16\SQLEXPRESS;Initial Catalog=db_tcc;Integrated Security=True";
         public SqlConnection getConexao()
         {
             SqlConnection conn = new SqlConnection(StrCon);

@@ -85,35 +85,7 @@ namespace Controller1
 
             return pedidos;
         }
-        public List<Pedido> ContarPedidos()
-        {
-            List<Pedido> pedidos = new List<Pedido>();
-
-
-            {
-                /*
-                string query = "SELECT  count(id) as total_pedido, data_pedido FROM tb_pedido where month(data_pedido)=@mes group by data_pedido";
-                SqlConnection conexao = conn.getConexao();
-                SqlCommand command = new SqlCommand(query, conexao);
-                command.Parameters.AddWithValue("@mes", 5);
-                conexao.Open();
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    Pedido pedido = new Pedido();
-                    pedido.Id = reader.GetInt32(0);
-                    
-                  
-                    pedidos.Add(pedido);
-                }
-
-                reader.Close();
-                */
-            }
-
-            return pedidos;
-        }
+        
         
         public List<Pedido> ObterPedidosPorData(DateTime dataPesquisa)
         {

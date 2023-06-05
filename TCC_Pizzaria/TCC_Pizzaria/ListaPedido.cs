@@ -45,6 +45,8 @@ namespace TCC_Pizzaria
             else
             {
                 int Id = (int)dtgView1.SelectedRows[0].Cells[0].Value;
+                AtualizaPedido attPedido = new AtualizaPedido();
+                attPedido.ShowDialog();
 
             }
         }

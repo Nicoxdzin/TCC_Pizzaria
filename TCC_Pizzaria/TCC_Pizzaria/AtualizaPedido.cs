@@ -7,24 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization;
 using Guna.UI2.WinForms;
-using Controller1;
-using System.Windows.Forms.DataVisualization.Charting;
-
 
 namespace TCC_Pizzaria
 {
-    public partial class GraficoPedido : Form
+    public partial class AtualizaPedido : Form
     {
-        public GraficoPedido()
+        public AtualizaPedido()
         {
             InitializeComponent();
         }
 
-        private void GraficoPedido_Load(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
+        }
+
+        private void AtualizaPedido_Load(object sender, EventArgs e)
+        {
+            guna2ShadowForm1.SetShadowForm(this);
         }
     }
 }

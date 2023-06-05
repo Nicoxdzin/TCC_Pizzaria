@@ -46,7 +46,7 @@ namespace TCC_Pizzaria
 
         private void mtsClientes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Clientes());
+            OpenChildForm(new AtualizaPedido());
         }
 
         private void Funcionario_Load(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace TCC_Pizzaria
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Clientes());
+            OpenChildForm(new AtualizaPedido());
         }
 
         private void button2_Click(object sender, EventArgs e)
