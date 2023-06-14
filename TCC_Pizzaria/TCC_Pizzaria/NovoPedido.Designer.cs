@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlAtualizarPedido = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,41 +50,73 @@
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             this.msgSucesso = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.msgErro = new Guna.UI2.WinForms.Guna2MessageDialog();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2Panel4.SuspendLayout();
+            this.pnlAtualizarPedido.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2Panel4
+            // pnlAtualizarPedido
             // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.guna2Panel4.BorderRadius = 10;
-            this.guna2Panel4.Controls.Add(this.label4);
-            this.guna2Panel4.Controls.Add(this.guna2ComboBox1);
-            this.guna2Panel4.Controls.Add(this.guna2Button1);
-            this.guna2Panel4.Controls.Add(this.label7);
-            this.guna2Panel4.Controls.Add(this.label3);
-            this.guna2Panel4.Controls.Add(this.label2);
-            this.guna2Panel4.Controls.Add(this.label10);
-            this.guna2Panel4.Controls.Add(this.txtProduto2);
-            this.guna2Panel4.Controls.Add(this.txtProduto3);
-            this.guna2Panel4.Controls.Add(this.txtProduto1);
-            this.guna2Panel4.Controls.Add(this.radio3);
-            this.guna2Panel4.Controls.Add(this.radio2);
-            this.guna2Panel4.Controls.Add(this.radio1);
-            this.guna2Panel4.Controls.Add(this.txtObs);
-            this.guna2Panel4.Controls.Add(this.txtEndereco);
-            this.guna2Panel4.Controls.Add(this.txtTelefone);
-            this.guna2Panel4.Controls.Add(this.txtCliente);
-            this.guna2Panel4.Controls.Add(this.label1);
-            this.guna2Panel4.Controls.Add(this.btnCadastrar);
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(20, 24);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Depth = 50;
-            this.guna2Panel4.Size = new System.Drawing.Size(860, 524);
-            this.guna2Panel4.TabIndex = 3;
-            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
+            this.pnlAtualizarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.pnlAtualizarPedido.BorderRadius = 10;
+            this.pnlAtualizarPedido.Controls.Add(this.label4);
+            this.pnlAtualizarPedido.Controls.Add(this.guna2ComboBox1);
+            this.pnlAtualizarPedido.Controls.Add(this.guna2Button1);
+            this.pnlAtualizarPedido.Controls.Add(this.label7);
+            this.pnlAtualizarPedido.Controls.Add(this.label3);
+            this.pnlAtualizarPedido.Controls.Add(this.label2);
+            this.pnlAtualizarPedido.Controls.Add(this.label10);
+            this.pnlAtualizarPedido.Controls.Add(this.txtProduto2);
+            this.pnlAtualizarPedido.Controls.Add(this.txtProduto3);
+            this.pnlAtualizarPedido.Controls.Add(this.txtProduto1);
+            this.pnlAtualizarPedido.Controls.Add(this.radio3);
+            this.pnlAtualizarPedido.Controls.Add(this.radio2);
+            this.pnlAtualizarPedido.Controls.Add(this.radio1);
+            this.pnlAtualizarPedido.Controls.Add(this.txtObs);
+            this.pnlAtualizarPedido.Controls.Add(this.txtEndereco);
+            this.pnlAtualizarPedido.Controls.Add(this.txtTelefone);
+            this.pnlAtualizarPedido.Controls.Add(this.txtCliente);
+            this.pnlAtualizarPedido.Controls.Add(this.label1);
+            this.pnlAtualizarPedido.Controls.Add(this.btnCadastrar);
+            this.pnlAtualizarPedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.pnlAtualizarPedido.Location = new System.Drawing.Point(20, 23);
+            this.pnlAtualizarPedido.Name = "pnlAtualizarPedido";
+            this.pnlAtualizarPedido.ShadowDecoration.Depth = 50;
+            this.pnlAtualizarPedido.Size = new System.Drawing.Size(860, 527);
+            this.pnlAtualizarPedido.TabIndex = 60;
+            this.pnlAtualizarPedido.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(51, 184);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 16);
+            this.label4.TabIndex = 62;
+            this.label4.Text = "Tamanho da pizza";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Broto",
+            "Pequena",
+            "Média",
+            "Grande",
+            "Gigante",
+            "BIG"});
+            this.guna2ComboBox1.Location = new System.Drawing.Point(54, 203);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(198, 36);
+            this.guna2ComboBox1.TabIndex = 61;
             // 
             // guna2Button1
             // 
@@ -437,61 +471,27 @@
             this.msgErro.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.msgErro.Text = "";
             // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Broto",
-            "Pequena",
-            "Média",
-            "Grande",
-            "Gigante",
-            "BIG"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(54, 203);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(198, 36);
-            this.guna2ComboBox1.TabIndex = 61;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(51, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 16);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "Tamanho da pizza";
-            // 
             // NovoPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 572);
-            this.Controls.Add(this.guna2Panel4);
+            this.Controls.Add(this.pnlAtualizarPedido);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NovoPedido";
             this.Text = "NovoPedido";
             this.Load += new System.EventHandler(this.NovoPedido_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NovoPedido_KeyDown);
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
+            this.pnlAtualizarPedido.ResumeLayout(false);
+            this.pnlAtualizarPedido.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel pnlAtualizarPedido;
         private Guna.UI2.WinForms.Guna2Button btnCadastrar;
         private Guna.UI2.WinForms.Guna2MessageDialog msgSucesso;
         private Guna.UI2.WinForms.Guna2MessageDialog msgErro;

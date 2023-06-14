@@ -17,6 +17,7 @@ namespace TCC_Pizzaria
         {
             InitializeComponent();
         }
+        private Form ActiveForm = null;
 
         private void dtgViewUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -28,6 +29,28 @@ namespace TCC_Pizzaria
             UserController user = new UserController();
             dtgViewCliente.AutoGenerateColumns = true;
             dtgViewCliente.DataSource = user.ObterClientes();
+        }
+
+        public void OpenChildForm(Form childForm)
+        {
+            if (ActiveForm != null)
+                ActiveForm.Close();
+            ActiveForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlCliente1.Controls.Add(childForm);
+            pnlCliente1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            //lblCurrentChildForm.text = childForm.Name;
+
+        }
+
+
+        private void btnCadastroNovoCliente_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new CadastroCliente());
         }
     }
 }

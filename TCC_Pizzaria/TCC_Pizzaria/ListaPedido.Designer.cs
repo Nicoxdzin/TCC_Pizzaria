@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlListaPedido = new Guna.UI2.WinForms.Guna2Panel();
             this.btnNovo = new Guna.UI2.WinForms.Guna2Button();
             this.dtPickerData = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtPesquisaNome = new Guna.UI2.WinForms.Guna2TextBox();
@@ -39,26 +39,26 @@
             this.btnAtualizar = new Guna.UI2.WinForms.Guna2Button();
             this.dtgView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Panel4.SuspendLayout();
+            this.pnlListaPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2Panel4
+            // pnlListaPedido
             // 
-            this.guna2Panel4.BorderRadius = 10;
-            this.guna2Panel4.Controls.Add(this.btnNovo);
-            this.guna2Panel4.Controls.Add(this.dtPickerData);
-            this.guna2Panel4.Controls.Add(this.txtPesquisaNome);
-            this.guna2Panel4.Controls.Add(this.btnDeletar);
-            this.guna2Panel4.Controls.Add(this.btnAtualizar);
-            this.guna2Panel4.Controls.Add(this.dtgView1);
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(21, 23);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(860, 527);
-            this.guna2Panel4.TabIndex = 4;
-            this.guna2Panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
+            this.pnlListaPedido.BorderRadius = 10;
+            this.pnlListaPedido.Controls.Add(this.btnNovo);
+            this.pnlListaPedido.Controls.Add(this.dtPickerData);
+            this.pnlListaPedido.Controls.Add(this.txtPesquisaNome);
+            this.pnlListaPedido.Controls.Add(this.btnDeletar);
+            this.pnlListaPedido.Controls.Add(this.btnAtualizar);
+            this.pnlListaPedido.Controls.Add(this.dtgView1);
+            this.pnlListaPedido.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.pnlListaPedido.Location = new System.Drawing.Point(21, 23);
+            this.pnlListaPedido.Name = "pnlListaPedido";
+            this.pnlListaPedido.Size = new System.Drawing.Size(860, 527);
+            this.pnlListaPedido.TabIndex = 4;
+            this.pnlListaPedido.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
             // btnNovo
             // 
@@ -73,7 +73,7 @@
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(137, 55);
             this.btnNovo.TabIndex = 6;
-            this.btnNovo.Text = "Cadastrar pedido";
+            this.btnNovo.Text = "Cadastrar Pedido";
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // dtPickerData
@@ -208,7 +208,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2Panel4);
+            this.panel1.Controls.Add(this.pnlListaPedido);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(902, 573);
@@ -226,7 +226,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaPedido";
             this.Load += new System.EventHandler(this.ListaPedido_Load);
-            this.guna2Panel4.ResumeLayout(false);
+            this.pnlListaPedido.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -235,7 +235,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel pnlListaPedido;
         private Guna.UI2.WinForms.Guna2DataGridView dtgView1;
         private Guna.UI2.WinForms.Guna2Button btnDeletar;
         private Guna.UI2.WinForms.Guna2Button btnAtualizar;

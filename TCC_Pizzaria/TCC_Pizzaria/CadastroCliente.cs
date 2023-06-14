@@ -119,5 +119,10 @@ namespace TCC_Pizzaria
                 }
             }
         }
+
+        private void btnVoltarListaCliente_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
