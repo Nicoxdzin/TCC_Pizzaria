@@ -22,6 +22,7 @@ namespace TCC_Pizzaria
         } 
         
         private Form activeForm = null;
+        private int id = 0;
 
         public void OpenChildForm(Form childForm)
         {
@@ -46,7 +47,7 @@ namespace TCC_Pizzaria
 
         private void mtsClientes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AtualizaPedido());
+            OpenChildForm(new AtualizaPedido(id));
         }
 
         private void Funcionario_Load(object sender, EventArgs e)
@@ -61,7 +62,7 @@ namespace TCC_Pizzaria
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AtualizaPedido());
+            OpenChildForm(new AtualizaPedido(id));
         }
 
         private void button2_Click(object sender, EventArgs e)

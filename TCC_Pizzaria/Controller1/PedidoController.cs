@@ -97,6 +97,23 @@ namespace Controller1
 
             return pedidosFiltrados;
         }
+
+        public Pedido AtualizarPedidoPorId(Pedido pedido)
+        {
+            string atualizar = "UPDATE tb_pedido SET produto = @Produto, nome_cliente = @Nome_cliente, telefone = @Telefone, endereco = @Endereco, observacoes = @Observacoes WHERE Id = @Id";
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(atualizar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@Produto", pedido.Produto);
+            comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
+            comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
+            comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
+            comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
+            comando.Parameters.AddWithValue("@Id", pedido.Id);
+            comando.ExecuteNonQuery();
+
+            return pedido;
+        }
     }
 
 }

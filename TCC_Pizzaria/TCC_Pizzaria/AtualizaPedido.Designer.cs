@@ -50,6 +50,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label4
@@ -150,7 +151,7 @@
             this.txtProduto2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtProduto2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProduto2.Location = new System.Drawing.Point(283, 230);
-            this.txtProduto2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProduto2.Margin = new System.Windows.Forms.Padding(2);
             this.txtProduto2.Name = "txtProduto2";
             this.txtProduto2.PasswordChar = '\0';
             this.txtProduto2.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -394,6 +395,7 @@
             this.btnCadastrar.Size = new System.Drawing.Size(117, 55);
             this.btnCadastrar.TabIndex = 63;
             this.btnCadastrar.Text = "Atualizar pedido";
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // guna2Button1
             // 
@@ -420,12 +422,23 @@
             // 
             this.guna2ShadowForm1.TargetForm = this;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(157, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 82;
+            this.label5.Text = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
             // AtualizaPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2ComboBox1);
@@ -478,5 +491,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private System.Windows.Forms.Label label5;
     }
 }

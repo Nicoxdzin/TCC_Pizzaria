@@ -44,10 +44,9 @@ namespace TCC_Pizzaria
             }
             else
             {
-                int Id = (int)dtgView1.SelectedRows[0].Cells[0].Value;
-                AtualizaPedido attPedido = new AtualizaPedido();
-                attPedido.ShowDialog();
-
+                int id = (int)dtgView1.SelectedRows[0].Cells["Id"].Value;
+                AtualizaPedido atualizaPedido = new AtualizaPedido(id);
+                atualizaPedido.ShowDialog();
             }
         }
 
@@ -122,6 +121,11 @@ namespace TCC_Pizzaria
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
