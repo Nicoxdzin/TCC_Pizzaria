@@ -183,6 +183,7 @@
             this.txtProduto3.SelectedText = "";
             this.txtProduto3.Size = new System.Drawing.Size(238, 36);
             this.txtProduto3.TabIndex = 73;
+            this.txtProduto3.TextChanged += new System.EventHandler(this.txtProduto3_TextChanged);
             // 
             // txtProduto1
             // 

@@ -98,22 +98,52 @@ namespace Controller1
             return pedidosFiltrados;
         }
 
-        public Pedido AtualizarPedidoPorId(Pedido pedido)
+        public Pedido ObterPedidoPorId(int id)
         {
-            string atualizar = "UPDATE tb_pedido SET produto = @Produto, nome_cliente = @Nome_cliente, telefone = @Telefone, endereco = @Endereco, observacoes = @Observacoes WHERE Id = @Id";
+            Pedido pedido = null;
+
+            string query = "SELECT * FROM tb_pedido WHERE id = " + id;
             SqlConnection conexao = conn.getConexao();
-            SqlCommand comando = new SqlCommand(atualizar, conexao);
+            SqlCommand command = new SqlCommand(query, conexao);
             conexao.Open();
-            comando.Parameters.AddWithValue("@Produto", pedido.Produto);
-            comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
-            comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
-            comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
-            comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
-            comando.Parameters.AddWithValue("@Id", pedido.Id);
-            comando.ExecuteNonQuery();
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                pedido = new Pedido();
+                pedido.Id = reader.GetInt32(0);
+                pedido.Produto = reader.GetString(1);
+                pedido.Nome_cliente = reader.GetString(2);
+                pedido.Telefone = reader.GetString(3);
+                pedido.Endereco = reader.GetString(4);
+                pedido.Observacoes = reader.GetString(5);
+            }
+
+            reader.Close();
 
             return pedido;
         }
+
+       public bool AtualizarPedidoPorId(Pedido pedido)
+{
+    string atualizar = "UPDATE tb_pedido SET produto = @Produto, cliente = @Nome_cliente, telefone = @Telefone, endereco = @Endereco, observacoes = @Observacoes WHERE Id = @Id";
+
+    SqlConnection conexao = conn.getConexao();
+    SqlCommand comando = new SqlCommand(atualizar, conexao);
+    conexao.Open();
+    comando.Parameters.AddWithValue("@Produto", pedido.Produto);
+    comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
+    comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
+    comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
+    comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
+    comando.Parameters.AddWithValue("@Id", pedido.Id);
+    int rowsAffected = comando.ExecuteNonQuery();
+    conexao.Close();
+
+    return rowsAffected > 0;
+}
+
+
     }
 
 }

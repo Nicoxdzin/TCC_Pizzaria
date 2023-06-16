@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="11264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="11776">
       <assemblyIdentity name="Controller1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BURp/w1EPvDIWN9m7jnsgNHkwhtIzabiaicqvTKGw4Y=</dsig:DigestValue>
+        <dsig:DigestValue>ewS6WS2purdoa7ifKSAhah6vY3GBVFpcbjv5LPxBEAQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,19 +73,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>g3DlCLc6m33XGCQvN4Pw6kRTW6B0nNu4ocooinGefh0=</dsig:DigestValue>
+        <dsig:DigestValue>nMwTzvpwP7xkt/l1nZfjf+a/p9tmFYv/3488XTIMgfM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="610776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="611288">
       <assemblyIdentity name="TCC_Pizzaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yqppU1JgELAHukck19X6WI1FruUUaArTOOabrT9GauE=</dsig:DigestValue>
+        <dsig:DigestValue>PGwAKk4b1uLbIXPr7cT8ovYxQc3gB6vqxglf2smrPBc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
