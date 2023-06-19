@@ -75,11 +75,14 @@ namespace Controller1
                 {
                     Pedido pedido = new Pedido();
                     pedido.Id = reader.GetInt32(0);
-                    //pedido.Produto = reader.GetString(1);
-                    pedido.Nome_cliente = reader.GetString(2);
-                    pedido.Telefone = reader.GetString(3);
-                    pedido.Endereco = reader.GetString(4);
-                    pedido.Observacoes = reader.GetString(5);
+                    pedido.Nome_cliente = reader.GetString(1);
+                    pedido.Telefone = reader.GetString(2);
+                    pedido.Endereco = reader.GetString(3);
+                    pedido.Sabor1 = reader.GetString(4);
+                    pedido.Sabor2 = reader.GetString(5);
+                    pedido.Sabor3 = reader.GetString(6);
+                    pedido.Sabor4 = reader.GetString(7);
+                    pedido.Observacoes = reader.GetString(8);
 
                     pedidos.Add(pedido);
                 }

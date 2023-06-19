@@ -35,8 +35,12 @@ namespace TCC_Pizzaria
                 //pedido.Produto = txtProduto1.Text;
                 pedido.Nome_cliente = txtCliente.Text;
                 pedido.Telefone = txtTelefone.Text;
+                pedido.Sabor1 = txtProduto1.Text;
+                pedido.Sabor2 = txtProduto2.Text;
+                pedido.Sabor3 = txtProduto3.Text;
+                //pedido.Sabor4 = txtProduto4.Text;
                 pedido.Endereco = txtEndereco.Text;
-                pedido.Observacoes = txtProduto1.Text;
+                pedido.Observacoes = txtObs.Text;
                 pedido = pedido_controller.Cadastrar(pedido);
 
                 if (pedido.Id < 0)
@@ -167,6 +171,11 @@ namespace TCC_Pizzaria
         }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProduto2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -429,6 +429,7 @@
             this.txtProduto2.Name = "txtProduto2";
             this.txtProduto2.Size = new System.Drawing.Size(238, 36);
             this.txtProduto2.TabIndex = 64;
+            this.txtProduto2.SelectedIndexChanged += new System.EventHandler(this.txtProduto2_SelectedIndexChanged);
             // 
             // txtProduto3
             // 
