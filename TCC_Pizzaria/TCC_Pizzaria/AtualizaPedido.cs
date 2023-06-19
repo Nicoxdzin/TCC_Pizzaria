@@ -34,7 +34,7 @@ namespace TCC_Pizzaria
                 txtTelefone.Text = pedidoObtido.Telefone;
                 txtEndereco.Text = pedidoObtido.Endereco;
                 txtObs.Text = pedidoObtido.Observacoes;
-                txtProduto1.Text = pedidoObtido.Produto;
+                //txtProduto1.Text = pedidoObtido.Produto;
                
 
             }
@@ -64,8 +64,9 @@ namespace TCC_Pizzaria
             if (txtCliente.Text != pedidoObtido.Nome_cliente ||
                 txtTelefone.Text != pedidoObtido.Telefone ||
                 txtEndereco.Text != pedidoObtido.Endereco ||
-                txtObs.Text != pedidoObtido.Observacoes ||
-                txtProduto1.Text != pedidoObtido.Produto)
+                txtObs.Text != pedidoObtido.Observacoes //||
+               // txtProduto1.Text != pedidoObtido.Produto
+               )
             {
                 Pedido pedidoAtualizado = new Pedido();
                 pedidoAtualizado.Id = pedidoId;
@@ -73,7 +74,7 @@ namespace TCC_Pizzaria
                 pedidoAtualizado.Telefone = txtTelefone.Text;
                 pedidoAtualizado.Endereco = txtEndereco.Text;
                 pedidoAtualizado.Observacoes = txtObs.Text;
-                pedidoAtualizado.Produto = txtProduto1.Text;
+                //pedidoAtualizado.Produto = txtProduto1.Text;
 
                 bool atualizado = controller.AtualizarPedidoPorId(pedidoAtualizado);
 

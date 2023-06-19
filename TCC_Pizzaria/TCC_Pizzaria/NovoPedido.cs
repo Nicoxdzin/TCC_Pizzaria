@@ -32,7 +32,7 @@ namespace TCC_Pizzaria
             {
                 PedidoController pedido_controller = new PedidoController();
                 Pedido pedido = new Pedido();
-                pedido.Produto = txtProduto1.Text;
+                //pedido.Produto = txtProduto1.Text;
                 pedido.Nome_cliente = txtCliente.Text;
                 pedido.Telefone = txtTelefone.Text;
                 pedido.Endereco = txtEndereco.Text;
@@ -74,6 +74,16 @@ namespace TCC_Pizzaria
 
         private void NovoPedido_Load(object sender, EventArgs e)
         {
+            PedidoController pedidoController = new PedidoController();
+            List<string> sabores1 = pedidoController.ObterSabores();
+            List<string> sabores2 = pedidoController.ObterSabores();
+            List<string> sabores3 = pedidoController.ObterSabores();
+
+            // Popular o ComboBox com os sabores
+            txtProduto1.DataSource = sabores1;
+            txtProduto2.DataSource = sabores2;
+            txtProduto3.DataSource = sabores3;
+
 
             txtProduto1.Enabled = false;
             txtProduto2.Enabled = false;
@@ -147,6 +157,16 @@ namespace TCC_Pizzaria
         }
 
         private void txtProduto1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

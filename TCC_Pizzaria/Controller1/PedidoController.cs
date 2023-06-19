@@ -16,14 +16,18 @@ namespace Controller1
 
         public Pedido Cadastrar(Pedido pedido)
         {
-            String cadastrar = "INSERT INTO tb_pedido values (@Produto,@Nome_cliente,@Telefone,@Endereco,@Observacoes,@DataPedido)";
+            String cadastrar = "INSERT INTO tb_pedido values (@Nome_cliente,@Telefone,@Endereco,@Sabor1,@Sabor2,@Sabor3,@Sabor4,@Observacoes,@DataPedido)";
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(cadastrar, conexao);
             conexao.Open();
-            comando.Parameters.AddWithValue("@Produto", pedido.Produto);
+            
             comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
             comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
             comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
+            comando.Parameters.AddWithValue("@Sabor1", pedido.Sabor1);
+            comando.Parameters.AddWithValue("@Sabor2", pedido.Sabor2);
+            comando.Parameters.AddWithValue("@Sabor3", pedido.Sabor3);
+            comando.Parameters.AddWithValue("@Sabor4", pedido.Sabor4);
             comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
             comando.Parameters.AddWithValue("@DataPedido", pedido.DataPedido);
             comando.ExecuteReader();
@@ -71,7 +75,7 @@ namespace Controller1
                 {
                     Pedido pedido = new Pedido();
                     pedido.Id = reader.GetInt32(0);
-                    pedido.Produto = reader.GetString(1);
+                    //pedido.Produto = reader.GetString(1);
                     pedido.Nome_cliente = reader.GetString(2);
                     pedido.Telefone = reader.GetString(3);
                     pedido.Endereco = reader.GetString(4);
@@ -112,7 +116,7 @@ namespace Controller1
             {
                 pedido = new Pedido();
                 pedido.Id = reader.GetInt32(0);
-                pedido.Produto = reader.GetString(1);
+                //pedido.Produto = reader.GetString(1);
                 pedido.Nome_cliente = reader.GetString(2);
                 pedido.Telefone = reader.GetString(3);
                 pedido.Endereco = reader.GetString(4);
@@ -125,23 +129,45 @@ namespace Controller1
         }
 
        public bool AtualizarPedidoPorId(Pedido pedido)
-{
-    string atualizar = "UPDATE tb_pedido SET produto = @Produto, cliente = @Nome_cliente, telefone = @Telefone, endereco = @Endereco, observacoes = @Observacoes WHERE Id = @Id";
+       {
+            string atualizar = "UPDATE tb_pedido SET produto = @Produto, cliente = @Nome_cliente, telefone = @Telefone, endereco = @Endereco, observacoes = @Observacoes WHERE Id = @Id";
 
-    SqlConnection conexao = conn.getConexao();
-    SqlCommand comando = new SqlCommand(atualizar, conexao);
-    conexao.Open();
-    comando.Parameters.AddWithValue("@Produto", pedido.Produto);
-    comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
-    comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
-    comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
-    comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
-    comando.Parameters.AddWithValue("@Id", pedido.Id);
-    int rowsAffected = comando.ExecuteNonQuery();
-    conexao.Close();
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(atualizar, conexao);
+            conexao.Open();
+            //comando.Parameters.AddWithValue("@Produto", pedido.Produto);
+            comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
+            comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
+            comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
+            comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
+            comando.Parameters.AddWithValue("@Id", pedido.Id);
+            int rowsAffected = comando.ExecuteNonQuery();
+            conexao.Close();
 
-    return rowsAffected > 0;
-}
+            return rowsAffected > 0;
+       }
+
+        public List<string> ObterSabores()
+        {
+            List<string> sabores = new List<string>();
+
+            string query = "SELECT sabor FROM tb_sabor ORDER BY sabor ";
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand command = new SqlCommand(query, conexao);
+            conexao.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string sabor = reader.GetString(0);
+                sabores.Add(sabor);
+            }
+
+            reader.Close();
+            conexao.Close();
+
+            return sabores;
+        }
 
 
     }

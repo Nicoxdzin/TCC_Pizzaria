@@ -180,7 +180,6 @@ C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\obj\Debug\Controller1.csproj.AssemblyReference.cache
 C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\Azure.Core.dll
 C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\Azure.Identity.dll
 C:\Users\mrilo\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
@@ -299,3 +298,4 @@ C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debu
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Nicolas\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\Controller1\obj\Debug\Controller1.csprojAssemblyReference.cache

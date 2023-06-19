@@ -14,16 +14,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          Opções de Manifesto do UAC
-          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
-          requestedExecutionLevel por um dos seguintes.
+          Opções de Manifesto UAC
+          Se desejar mudar o nível de Controle de Conta de Usuário do Windows, substitua o 
+          nó requestedExecutionLevel por um dos seguintes.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
-         exclua o nó requestedExecutionLevel.
+         Se deseja usar a Virtualização de Arquivos e Registro para compatibilidade 
+         com versões anteriores, exclua o nó requestedExecutionLevel.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="11776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="12288">
       <assemblyIdentity name="Controller1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ewS6WS2purdoa7ifKSAhah6vY3GBVFpcbjv5LPxBEAQ=</dsig:DigestValue>
+        <dsig:DigestValue>Q3ltslsgFj3gvDEcvt0iHbtA1EGeL3VpGbP2ojMz/LM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="model1.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="model1.dll" size="8192">
       <assemblyIdentity name="model1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nMwTzvpwP7xkt/l1nZfjf+a/p9tmFYv/3488XTIMgfM=</dsig:DigestValue>
+        <dsig:DigestValue>VoMg3Jo4PoSMbpRZwtzvFPUuYBBPU4nlrRDbZvXgpuA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PGwAKk4b1uLbIXPr7cT8ovYxQc3gB6vqxglf2smrPBc=</dsig:DigestValue>
+        <dsig:DigestValue>EZn0FN9Xy4+AkiUywmX8htcrEcJyGEMzDU0xbB6fI2U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
