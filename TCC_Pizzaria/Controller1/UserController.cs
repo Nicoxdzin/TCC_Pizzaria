@@ -57,6 +57,36 @@ namespace Controller
             return cadastro;
 
         }
+        public Cliente DeletarCliente(Cliente cliente)
+        {
+            string deletar = "DELETE FROM tb_cadastro WHERE id = @Id";
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(deletar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@Id", cliente.Id);
+            comando.ExecuteNonQuery();
+            
+            return cliente;
+        }
+        public bool AtualizarCliente(Cliente cliente)
+        {
+            string atualizar = "UPDATE tb_cadastro SET nome = @nome, cpf = @cpf, numero_tel = @numero_tel, cep = @cep, numero_casa = @numero_casa, referencia = @eferencia, WHERE Id = @Id";
+
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(atualizar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@nome", cliente.nome);
+            comando.Parameters.AddWithValue("@cpf", cliente.cpf);
+            comando.Parameters.AddWithValue("@numero_tel", cliente.numero_tel);
+            comando.Parameters.AddWithValue("@cep", cliente.cep);
+            comando.Parameters.AddWithValue("@numero_casa", cliente.numero_casa);
+            comando.Parameters.AddWithValue("@referencia", cliente.referencia);
+            comando.Parameters.AddWithValue("@Id", cliente.Id);
+            int rowsAffected1 = comando.ExecuteNonQuery();
+            conexao.Close();
+
+            return rowsAffected1 > 0;
+        }
 
         public void Editar()
         {
