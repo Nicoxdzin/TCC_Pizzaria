@@ -128,3 +128,4 @@ C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.AtualizaPedido.resources
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Documents\GitHub\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.AtualizaCliente.resources

@@ -131,6 +131,7 @@
             this.btnAtualizarCliente.Size = new System.Drawing.Size(137, 55);
             this.btnAtualizarCliente.TabIndex = 1;
             this.btnAtualizarCliente.Text = "Atualizar Cliente";
+            this.btnAtualizarCliente.Click += new System.EventHandler(this.btnAtualizarCliente_Click);
             // 
             // dtgViewCliente
             // 

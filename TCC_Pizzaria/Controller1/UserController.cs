@@ -87,10 +87,51 @@ namespace Controller
 
             return rowsAffected1 > 0;
         }
-
-        public void Editar()
+        public Cliente ObterClientePorId(int Id)
         {
+            Cliente cliente = null;
 
+            string query = "SELECT * FROM tb_cadastro WHERE id = " + Id;
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand command = new SqlCommand(query, conexao);
+            conexao.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                cliente = new Cliente();
+                cliente.Id = reader.GetInt32(0);
+                cliente.nome = reader.GetString(1);
+                cliente.cpf = reader.GetString(2);
+                cliente.numero_tel = reader.GetString(3);
+                cliente.cep = reader.GetString(4);
+                cliente.numero_casa = reader.GetString(5);
+                cliente.referencia = reader.GetString(6);
+            }
+
+            reader.Close();
+
+            return cliente;
+
+        }
+        public bool AtualizarClientePorId(Cliente cliente)
+        {
+            string atualizar = "UPDATE tb_cadastro SET nome = @nome, cpf = @cpf, numero_tel = @numero_tel, cep = @cep, numero_casa = @numero_casa WHERE Id = @Id";
+
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(atualizar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@nome", cliente.nome);
+            comando.Parameters.AddWithValue("@cpf", cliente.cpf);
+            comando.Parameters.AddWithValue("@numero_tel", cliente.numero_tel);
+            comando.Parameters.AddWithValue("@cep", cliente.cep);
+            comando.Parameters.AddWithValue("@numero_casa", cliente.numero_casa);
+            comando.Parameters.AddWithValue("@referencia", cliente.referencia);
+            comando.Parameters.AddWithValue("@Id", cliente.Id);
+            int rowsAffected = comando.ExecuteNonQuery();
+            conexao.Close();
+
+            return rowsAffected > 0;
         }
         public List<Cliente> ObterClientes()
         {

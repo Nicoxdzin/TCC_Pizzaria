@@ -391,11 +391,11 @@
             this.btnCadastrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(661, 373);
+            this.btnCadastrar.Location = new System.Drawing.Point(671, 383);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(117, 55);
             this.btnCadastrar.TabIndex = 63;
-            this.btnCadastrar.Text = "Atualizar pedido";
+            this.btnCadastrar.Text = "Atualizar Pedido";
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // guna2Button1
@@ -407,9 +407,9 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(540, 373);
+            this.guna2Button1.Location = new System.Drawing.Point(548, 383);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(115, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(117, 55);
             this.guna2Button1.TabIndex = 81;
             this.guna2Button1.Text = "Cancelar";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);

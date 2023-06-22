@@ -80,5 +80,20 @@ namespace TCC_Pizzaria
 
             }
         }
+
+        private void btnAtualizarCliente_Click(object sender, EventArgs e)
+        {
+            if (dtgViewCliente.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Nenhuma linha selecionada. Selecione uma linha antes de prosseguir.");
+                return;
+            }
+            else
+            {
+                int id = (int)dtgViewCliente.SelectedRows[0].Cells["Id"].Value;
+                AtualizaCliente atualizaCliente = new AtualizaCliente(id);
+                atualizaCliente.ShowDialog();
+            }
+        }
     }
 }
