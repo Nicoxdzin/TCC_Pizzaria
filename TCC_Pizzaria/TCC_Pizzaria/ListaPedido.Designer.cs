@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlListaPedido = new Guna.UI2.WinForms.Guna2Panel();
             this.btnNovo = new Guna.UI2.WinForms.Guna2Button();
             this.dtPickerData = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtPesquisaNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDeletar = new Guna.UI2.WinForms.Guna2Button();
             this.btnAtualizar = new Guna.UI2.WinForms.Guna2Button();
-            this.dtgView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtgView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlListaPedido.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlListaPedido
             // 
             this.pnlListaPedido.BorderRadius = 10;
+            this.pnlListaPedido.Controls.Add(this.guna2Button1);
             this.pnlListaPedido.Controls.Add(this.btnNovo);
             this.pnlListaPedido.Controls.Add(this.dtPickerData);
             this.pnlListaPedido.Controls.Add(this.txtPesquisaNome);
@@ -146,6 +148,14 @@
             this.btnAtualizar.Text = "Atualizar Pedido";
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pnlListaPedido);
+            this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(902, 573);
+            this.panel1.TabIndex = 5;
+            // 
             // dtgView1
             // 
             this.dtgView1.AllowDrop = true;
@@ -154,34 +164,33 @@
             this.dtgView1.AllowUserToOrderColumns = true;
             this.dtgView1.AllowUserToResizeColumns = false;
             this.dtgView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.dtgView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dtgView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dtgView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dtgView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dtgView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgView1.ColumnHeadersHeight = 4;
             this.dtgView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dtgView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgView1.EnableHeadersVisualStyles = true;
             this.dtgView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
@@ -189,11 +198,12 @@
             this.dtgView1.Name = "dtgView1";
             this.dtgView1.ReadOnly = true;
             this.dtgView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dtgView1.RowHeadersVisible = false;
             this.dtgView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dtgView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dtgView1.Size = new System.Drawing.Size(637, 446);
             this.dtgView1.TabIndex = 0;
@@ -221,13 +231,22 @@
             this.dtgView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dtgView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
-            // panel1
+            // guna2Button1
             // 
-            this.panel1.Controls.Add(this.pnlListaPedido);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(902, 573);
-            this.panel1.TabIndex = 5;
+            this.guna2Button1.BackgroundImage = global::TCC_Pizzaria.Properties.Resources.atualizar;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.guna2Button1.Location = new System.Drawing.Point(30, 468);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(32, 33);
+            this.guna2Button1.TabIndex = 62;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // ListaPedido
             // 
@@ -242,8 +261,8 @@
             this.Text = "ListaPedido";
             this.Load += new System.EventHandler(this.ListaPedido_Load);
             this.pnlListaPedido.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgView1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -251,12 +270,13 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel pnlListaPedido;
-        private Guna.UI2.WinForms.Guna2DataGridView dtgView1;
         private Guna.UI2.WinForms.Guna2Button btnDeletar;
         private Guna.UI2.WinForms.Guna2Button btnAtualizar;
         private Guna.UI2.WinForms.Guna2TextBox txtPesquisaNome;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtPickerData;
         private Guna.UI2.WinForms.Guna2Button btnNovo;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2DataGridView dtgView1;
     }
 }

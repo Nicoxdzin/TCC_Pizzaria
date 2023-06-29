@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtTamanho = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtProduto2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtProduto3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtProduto1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSabor2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSabor3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSabor1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.radio3 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.radio2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.radio1 = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -65,27 +65,28 @@
             this.label4.TabIndex = 80;
             this.label4.Text = "Tamanho da pizza";
             // 
-            // guna2ComboBox1
+            // txtTamanho
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.txtTamanho.BackColor = System.Drawing.Color.Transparent;
+            this.txtTamanho.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTamanho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTamanho.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTamanho.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTamanho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTamanho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtTamanho.ItemHeight = 30;
+            this.txtTamanho.Items.AddRange(new object[] {
             "Broto",
             "Pequena",
             "Média",
             "Grande",
             "Gigante",
             "BIG"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(26, 165);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(198, 36);
-            this.guna2ComboBox1.TabIndex = 79;
+            this.txtTamanho.Location = new System.Drawing.Point(26, 165);
+            this.txtTamanho.Name = "txtTamanho";
+            this.txtTamanho.Size = new System.Drawing.Size(198, 36);
+            this.txtTamanho.TabIndex = 79;
+            this.txtTamanho.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -135,79 +136,79 @@
             this.label10.TabIndex = 75;
             this.label10.Text = "Telefone";
             // 
-            // txtProduto2
+            // txtSabor2
             // 
-            this.txtProduto2.BackColor = System.Drawing.Color.Transparent;
-            this.txtProduto2.BorderColor = System.Drawing.Color.Gray;
-            this.txtProduto2.BorderRadius = 5;
-            this.txtProduto2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProduto2.DefaultText = "";
-            this.txtProduto2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProduto2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProduto2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduto2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtProduto2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto2.Location = new System.Drawing.Point(283, 230);
-            this.txtProduto2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProduto2.Name = "txtProduto2";
-            this.txtProduto2.PasswordChar = '\0';
-            this.txtProduto2.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtProduto2.PlaceholderText = "Segundo sabor";
-            this.txtProduto2.SelectedText = "";
-            this.txtProduto2.Size = new System.Drawing.Size(238, 36);
-            this.txtProduto2.TabIndex = 74;
+            this.txtSabor2.BackColor = System.Drawing.Color.Transparent;
+            this.txtSabor2.BorderColor = System.Drawing.Color.Gray;
+            this.txtSabor2.BorderRadius = 5;
+            this.txtSabor2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSabor2.DefaultText = "";
+            this.txtSabor2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSabor2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSabor2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSabor2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSabor2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSabor2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSabor2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSabor2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSabor2.Location = new System.Drawing.Point(283, 230);
+            this.txtSabor2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSabor2.Name = "txtSabor2";
+            this.txtSabor2.PasswordChar = '\0';
+            this.txtSabor2.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtSabor2.PlaceholderText = "Segundo sabor";
+            this.txtSabor2.SelectedText = "";
+            this.txtSabor2.Size = new System.Drawing.Size(238, 36);
+            this.txtSabor2.TabIndex = 74;
             // 
-            // txtProduto3
+            // txtSabor3
             // 
-            this.txtProduto3.BackColor = System.Drawing.Color.Transparent;
-            this.txtProduto3.BorderColor = System.Drawing.Color.Gray;
-            this.txtProduto3.BorderRadius = 5;
-            this.txtProduto3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProduto3.DefaultText = "";
-            this.txtProduto3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProduto3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProduto3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txtProduto3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtProduto3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto3.Location = new System.Drawing.Point(283, 289);
-            this.txtProduto3.Name = "txtProduto3";
-            this.txtProduto3.PasswordChar = '\0';
-            this.txtProduto3.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtProduto3.PlaceholderText = "Terceiro Sabor";
-            this.txtProduto3.SelectedText = "";
-            this.txtProduto3.Size = new System.Drawing.Size(238, 36);
-            this.txtProduto3.TabIndex = 73;
-            this.txtProduto3.TextChanged += new System.EventHandler(this.txtProduto3_TextChanged);
+            this.txtSabor3.BackColor = System.Drawing.Color.Transparent;
+            this.txtSabor3.BorderColor = System.Drawing.Color.Gray;
+            this.txtSabor3.BorderRadius = 5;
+            this.txtSabor3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSabor3.DefaultText = "";
+            this.txtSabor3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSabor3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSabor3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSabor3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSabor3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSabor3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txtSabor3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSabor3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSabor3.Location = new System.Drawing.Point(283, 289);
+            this.txtSabor3.Name = "txtSabor3";
+            this.txtSabor3.PasswordChar = '\0';
+            this.txtSabor3.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtSabor3.PlaceholderText = "Terceiro Sabor";
+            this.txtSabor3.SelectedText = "";
+            this.txtSabor3.Size = new System.Drawing.Size(238, 36);
+            this.txtSabor3.TabIndex = 73;
+            this.txtSabor3.TextChanged += new System.EventHandler(this.txtProduto3_TextChanged);
             // 
-            // txtProduto1
+            // txtSabor1
             // 
-            this.txtProduto1.BackColor = System.Drawing.Color.Transparent;
-            this.txtProduto1.BorderColor = System.Drawing.Color.Gray;
-            this.txtProduto1.BorderRadius = 5;
-            this.txtProduto1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProduto1.DefaultText = "";
-            this.txtProduto1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProduto1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProduto1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProduto1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProduto1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtProduto1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto1.Location = new System.Drawing.Point(283, 177);
-            this.txtProduto1.Name = "txtProduto1";
-            this.txtProduto1.PasswordChar = '\0';
-            this.txtProduto1.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtProduto1.PlaceholderText = "Primeiro sabor";
-            this.txtProduto1.SelectedText = "";
-            this.txtProduto1.Size = new System.Drawing.Size(238, 36);
-            this.txtProduto1.TabIndex = 72;
+            this.txtSabor1.BackColor = System.Drawing.Color.Transparent;
+            this.txtSabor1.BorderColor = System.Drawing.Color.Gray;
+            this.txtSabor1.BorderRadius = 5;
+            this.txtSabor1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSabor1.DefaultText = "";
+            this.txtSabor1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSabor1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSabor1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSabor1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSabor1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSabor1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSabor1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSabor1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSabor1.Location = new System.Drawing.Point(283, 177);
+            this.txtSabor1.Name = "txtSabor1";
+            this.txtSabor1.PasswordChar = '\0';
+            this.txtSabor1.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtSabor1.PlaceholderText = "Primeiro sabor";
+            this.txtSabor1.SelectedText = "";
+            this.txtSabor1.Size = new System.Drawing.Size(238, 36);
+            this.txtSabor1.TabIndex = 72;
             // 
             // radio3
             // 
@@ -442,14 +443,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.txtTamanho);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtProduto2);
-            this.Controls.Add(this.txtProduto3);
-            this.Controls.Add(this.txtProduto1);
+            this.Controls.Add(this.txtSabor2);
+            this.Controls.Add(this.txtSabor3);
+            this.Controls.Add(this.txtSabor1);
             this.Controls.Add(this.radio3);
             this.Controls.Add(this.radio2);
             this.Controls.Add(this.radio1);
@@ -472,14 +473,14 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtTamanho;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox txtProduto2;
-        private Guna.UI2.WinForms.Guna2TextBox txtProduto3;
-        private Guna.UI2.WinForms.Guna2TextBox txtProduto1;
+        private Guna.UI2.WinForms.Guna2TextBox txtSabor2;
+        private Guna.UI2.WinForms.Guna2TextBox txtSabor3;
+        private Guna.UI2.WinForms.Guna2TextBox txtSabor1;
         private Guna.UI2.WinForms.Guna2RadioButton radio3;
         private Guna.UI2.WinForms.Guna2RadioButton radio2;
         private Guna.UI2.WinForms.Guna2RadioButton radio1;

@@ -13,7 +13,7 @@ namespace Controller1
         //variaveis de conexao
    
 
-        static public string StrCon = @"Data Source=SNCTP07LABF07\SQLEXPRESS;Initial Catalog=db_tcc;Integrated Security=True";
+        static public string StrCon = @"Data Source=SNCTP07LABF17\SQLEXPRESS;Initial Catalog=db_tcc;Integrated Security=True";
         public SqlConnection getConexao()
         {
             SqlConnection conn = new SqlConnection(StrCon);

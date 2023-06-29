@@ -35,6 +35,7 @@ namespace TCC_Pizzaria
                 //pedido.Produto = txtProduto1.Text;
                 pedido.Nome_cliente = txtCliente.Text;
                 pedido.Telefone = txtTelefone.Text;
+                pedido.Tamanho = txtTamanho.Text;
                 pedido.Sabor1 = txtProduto1.Text;
                 pedido.Sabor2 = txtProduto2.Text;
                 pedido.Sabor3 = txtProduto3.Text;

@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.pnlAtualizarPedido = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtProduto3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtProduto2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtProduto1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtTamanho = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,9 +50,6 @@
             this.btnCadastrar = new Guna.UI2.WinForms.Guna2Button();
             this.msgSucesso = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.msgErro = new Guna.UI2.WinForms.Guna2MessageDialog();
-            this.txtProduto1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtProduto2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtProduto3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlAtualizarPedido.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             this.pnlAtualizarPedido.Controls.Add(this.txtProduto2);
             this.pnlAtualizarPedido.Controls.Add(this.txtProduto1);
             this.pnlAtualizarPedido.Controls.Add(this.label4);
-            this.pnlAtualizarPedido.Controls.Add(this.guna2ComboBox1);
+            this.pnlAtualizarPedido.Controls.Add(this.txtTamanho);
             this.pnlAtualizarPedido.Controls.Add(this.guna2Button1);
             this.pnlAtualizarPedido.Controls.Add(this.label7);
             this.pnlAtualizarPedido.Controls.Add(this.label3);
@@ -84,6 +84,53 @@
             this.pnlAtualizarPedido.TabIndex = 60;
             this.pnlAtualizarPedido.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel4_Paint);
             // 
+            // txtProduto3
+            // 
+            this.txtProduto3.BackColor = System.Drawing.Color.Transparent;
+            this.txtProduto3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtProduto3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtProduto3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtProduto3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtProduto3.ItemHeight = 30;
+            this.txtProduto3.Location = new System.Drawing.Point(311, 318);
+            this.txtProduto3.Name = "txtProduto3";
+            this.txtProduto3.Size = new System.Drawing.Size(238, 36);
+            this.txtProduto3.TabIndex = 65;
+            // 
+            // txtProduto2
+            // 
+            this.txtProduto2.BackColor = System.Drawing.Color.Transparent;
+            this.txtProduto2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtProduto2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtProduto2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtProduto2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtProduto2.ItemHeight = 30;
+            this.txtProduto2.Location = new System.Drawing.Point(311, 261);
+            this.txtProduto2.Name = "txtProduto2";
+            this.txtProduto2.Size = new System.Drawing.Size(238, 36);
+            this.txtProduto2.TabIndex = 64;
+            this.txtProduto2.SelectedIndexChanged += new System.EventHandler(this.txtProduto2_SelectedIndexChanged);
+            // 
+            // txtProduto1
+            // 
+            this.txtProduto1.BackColor = System.Drawing.Color.Transparent;
+            this.txtProduto1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtProduto1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtProduto1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtProduto1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtProduto1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtProduto1.ItemHeight = 30;
+            this.txtProduto1.Location = new System.Drawing.Point(311, 203);
+            this.txtProduto1.Name = "txtProduto1";
+            this.txtProduto1.Size = new System.Drawing.Size(238, 36);
+            this.txtProduto1.TabIndex = 63;
+            this.txtProduto1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -92,32 +139,32 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label4.Location = new System.Drawing.Point(51, 184);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 16);
+            this.label4.Size = new System.Drawing.Size(118, 16);
             this.label4.TabIndex = 62;
             this.label4.Text = "Tamanho da pizza";
             // 
-            // guna2ComboBox1
+            // txtTamanho
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.txtTamanho.BackColor = System.Drawing.Color.Transparent;
+            this.txtTamanho.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTamanho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTamanho.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTamanho.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTamanho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTamanho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtTamanho.ItemHeight = 30;
+            this.txtTamanho.Items.AddRange(new object[] {
             "Broto",
             "Pequena",
             "Média",
             "Grande",
             "Gigante",
             "BIG"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(54, 203);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(198, 36);
-            this.guna2ComboBox1.TabIndex = 61;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.txtTamanho.Location = new System.Drawing.Point(54, 203);
+            this.txtTamanho.Name = "txtTamanho";
+            this.txtTamanho.Size = new System.Drawing.Size(198, 36);
+            this.txtTamanho.TabIndex = 61;
+            this.txtTamanho.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // guna2Button1
             // 
@@ -144,7 +191,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label7.Location = new System.Drawing.Point(565, 186);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 16);
+            this.label7.Size = new System.Drawing.Size(89, 16);
             this.label7.TabIndex = 59;
             this.label7.Text = "Observações";
             // 
@@ -156,7 +203,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label3.Location = new System.Drawing.Point(308, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 16);
+            this.label3.Size = new System.Drawing.Size(149, 16);
             this.label3.TabIndex = 55;
             this.label3.Text = "Quantidade de sabores";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -169,7 +216,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(565, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 54;
             this.label2.Text = "Endereço";
             // 
@@ -181,7 +228,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label10.Location = new System.Drawing.Point(308, 59);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 16);
+            this.label10.Size = new System.Drawing.Size(61, 16);
             this.label10.TabIndex = 53;
             this.label10.Text = "Telefone";
             // 
@@ -361,7 +408,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(51, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.Size = new System.Drawing.Size(48, 16);
             this.label1.TabIndex = 25;
             this.label1.Text = "Cliente";
             // 
@@ -398,53 +445,6 @@
             this.msgErro.Parent = null;
             this.msgErro.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.msgErro.Text = "";
-            // 
-            // txtProduto1
-            // 
-            this.txtProduto1.BackColor = System.Drawing.Color.Transparent;
-            this.txtProduto1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtProduto1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtProduto1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtProduto1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtProduto1.ItemHeight = 30;
-            this.txtProduto1.Location = new System.Drawing.Point(311, 203);
-            this.txtProduto1.Name = "txtProduto1";
-            this.txtProduto1.Size = new System.Drawing.Size(238, 36);
-            this.txtProduto1.TabIndex = 63;
-            this.txtProduto1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
-            // 
-            // txtProduto2
-            // 
-            this.txtProduto2.BackColor = System.Drawing.Color.Transparent;
-            this.txtProduto2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtProduto2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtProduto2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtProduto2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtProduto2.ItemHeight = 30;
-            this.txtProduto2.Location = new System.Drawing.Point(311, 261);
-            this.txtProduto2.Name = "txtProduto2";
-            this.txtProduto2.Size = new System.Drawing.Size(238, 36);
-            this.txtProduto2.TabIndex = 64;
-            this.txtProduto2.SelectedIndexChanged += new System.EventHandler(this.txtProduto2_SelectedIndexChanged);
-            // 
-            // txtProduto3
-            // 
-            this.txtProduto3.BackColor = System.Drawing.Color.Transparent;
-            this.txtProduto3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtProduto3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtProduto3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProduto3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtProduto3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtProduto3.ItemHeight = 30;
-            this.txtProduto3.Location = new System.Drawing.Point(311, 318);
-            this.txtProduto3.Name = "txtProduto3";
-            this.txtProduto3.Size = new System.Drawing.Size(238, 36);
-            this.txtProduto3.TabIndex = 65;
             // 
             // NovoPedido
             // 
@@ -484,7 +484,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox txtTamanho;
         private Guna.UI2.WinForms.Guna2ComboBox txtProduto3;
         private Guna.UI2.WinForms.Guna2ComboBox txtProduto2;
         private Guna.UI2.WinForms.Guna2ComboBox txtProduto1;

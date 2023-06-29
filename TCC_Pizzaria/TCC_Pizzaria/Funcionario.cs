@@ -176,5 +176,11 @@ namespace TCC_Pizzaria
             OpenChildForm(new GraficoPedido());
             label1.Text = "Gráficos";
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Config());
+            label1.Text = "Configurações";
+        }
     }
 }

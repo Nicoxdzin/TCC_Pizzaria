@@ -129,5 +129,12 @@ namespace TCC_Pizzaria
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            pedidoController = new PedidoController();
+            dtgView1.AutoGenerateColumns = true;
+            dtgView1.DataSource = pedidoController.ObterPedidos();
+        }
     }
 }

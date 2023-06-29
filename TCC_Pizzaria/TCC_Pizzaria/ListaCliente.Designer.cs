@@ -192,6 +192,7 @@
             this.dtgViewCliente.ThemeStyle.RowsStyle.Height = 22;
             this.dtgViewCliente.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.dtgViewCliente.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtgViewCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgViewCliente_CellContentClick);
             // 
             // ListaCliente
             // 

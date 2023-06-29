@@ -16,7 +16,7 @@ namespace Controller1
 
         public Pedido Cadastrar(Pedido pedido)
         {
-            String cadastrar = "INSERT INTO tb_pedido values (@Nome_cliente,@Telefone,@Endereco,@Sabor1,@Sabor2,@Sabor3,@Sabor4,@Observacoes,@DataPedido)";
+            String cadastrar = "INSERT INTO tb_pedido values (@Nome_cliente,@Telefone,@Endereco,@Sabor1,@Sabor2,@Sabor3,@Observacoes,@Tamanho,@DataPedido)";
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(cadastrar, conexao);
             conexao.Open();
@@ -27,8 +27,8 @@ namespace Controller1
             comando.Parameters.AddWithValue("@Sabor1", pedido.Sabor1);
             comando.Parameters.AddWithValue("@Sabor2", pedido.Sabor2);
             comando.Parameters.AddWithValue("@Sabor3", pedido.Sabor3);
-            comando.Parameters.AddWithValue("@Sabor4", pedido.Sabor4);
             comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
+            comando.Parameters.AddWithValue("@Tamanho", pedido.Tamanho);
             comando.Parameters.AddWithValue("@DataPedido", pedido.DataPedido);
             comando.ExecuteReader();
             
@@ -81,8 +81,9 @@ namespace Controller1
                     pedido.Sabor1 = reader.GetString(4);
                     pedido.Sabor2 = reader.GetString(5);
                     pedido.Sabor3 = reader.GetString(6);
-                    pedido.Sabor4 = reader.GetString(7);
-                    pedido.Observacoes = reader.GetString(8);
+                    pedido.Observacoes = reader.GetString(7);
+                    pedido.Tamanho = reader.GetString(8);
+                    pedido.DataPedido = reader.GetDateTime(9);
 
                     pedidos.Add(pedido);
                 }
@@ -119,11 +120,15 @@ namespace Controller1
             {
                 pedido = new Pedido();
                 pedido.Id = reader.GetInt32(0);
-                //pedido.Produto = reader.GetString(1);
-                pedido.Nome_cliente = reader.GetString(2);
-                pedido.Telefone = reader.GetString(3);
-                pedido.Endereco = reader.GetString(4);
-                pedido.Observacoes = reader.GetString(5);
+                pedido.Nome_cliente = reader.GetString(1);
+                pedido.Telefone = reader.GetString(2);
+                pedido.Endereco = reader.GetString(3);
+                pedido.Sabor1 = reader.GetString(4);
+                pedido.Sabor2 = reader.GetString(5);
+                pedido.Sabor3 = reader.GetString(6);
+                pedido.Observacoes = reader.GetString(7);
+                pedido.Tamanho = reader.GetString(8);
+                pedido.DataPedido = reader.GetDateTime(9);
             }
 
             reader.Close();
@@ -138,11 +143,13 @@ namespace Controller1
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(atualizar, conexao);
             conexao.Open();
-            //comando.Parameters.AddWithValue("@Produto", pedido.Produto);
             comando.Parameters.AddWithValue("@Nome_cliente", pedido.Nome_cliente);
             comando.Parameters.AddWithValue("@Telefone", pedido.Telefone);
             comando.Parameters.AddWithValue("@Endereco", pedido.Endereco);
-            comando.Parameters.AddWithValue("@Observacoes", pedido.Observacoes);
+            comando.Parameters.AddWithValue("@Tamanho", pedido.Tamanho);
+            comando.Parameters.AddWithValue("@Sabor1", pedido.Sabor1);
+            comando.Parameters.AddWithValue("@Sabor2", pedido.Sabor2);
+            comando.Parameters.AddWithValue("@Sabor3", pedido.Sabor3);
             comando.Parameters.AddWithValue("@Id", pedido.Id);
             int rowsAffected = comando.ExecuteNonQuery();
             conexao.Close();

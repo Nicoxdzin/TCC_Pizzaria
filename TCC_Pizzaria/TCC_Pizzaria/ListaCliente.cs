@@ -95,5 +95,10 @@ namespace TCC_Pizzaria
                 atualizaCliente.ShowDialog();
             }
         }
+
+        private void dtgViewCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

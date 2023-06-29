@@ -33,6 +33,10 @@ namespace TCC_Pizzaria
                 txtCliente.Text = pedidoObtido.Nome_cliente;
                 txtTelefone.Text = pedidoObtido.Telefone;
                 txtEndereco.Text = pedidoObtido.Endereco;
+                txtTamanho.Text = pedidoObtido.Tamanho;
+                txtSabor1.Text = pedidoObtido.Sabor1;
+                txtSabor2.Text = pedidoObtido.Sabor2;
+                txtSabor3.Text = pedidoObtido.Sabor3;
                 txtObs.Text = pedidoObtido.Observacoes;
                 //txtProduto1.Text = pedidoObtido.Produto;
                
@@ -64,8 +68,11 @@ namespace TCC_Pizzaria
             if (txtCliente.Text != pedidoObtido.Nome_cliente ||
                 txtTelefone.Text != pedidoObtido.Telefone ||
                 txtEndereco.Text != pedidoObtido.Endereco ||
-                txtObs.Text != pedidoObtido.Observacoes //||
-               // txtProduto1.Text != pedidoObtido.Produto
+                txtObs.Text != pedidoObtido.Observacoes ||
+                txtSabor1.Text != pedidoObtido.Sabor1 ||
+                txtSabor2.Text != pedidoObtido.Sabor2 ||
+                txtSabor3.Text != pedidoObtido.Sabor3 ||
+                txtTamanho.Text != pedidoObtido.Tamanho
                )
             {
                 Pedido pedidoAtualizado = new Pedido();
@@ -74,7 +81,10 @@ namespace TCC_Pizzaria
                 pedidoAtualizado.Telefone = txtTelefone.Text;
                 pedidoAtualizado.Endereco = txtEndereco.Text;
                 pedidoAtualizado.Observacoes = txtObs.Text;
-                //pedidoAtualizado.Produto = txtProduto1.Text;
+                pedidoAtualizado.Sabor1= txtSabor1.Text;
+                pedidoAtualizado.Sabor1 = txtSabor2.Text;
+                pedidoAtualizado.Sabor1 = txtSabor3.Text;
+                pedidoAtualizado.Tamanho = txtTamanho.Text;
 
                 bool atualizado = controller.AtualizarPedidoPorId(pedidoAtualizado);
 
@@ -95,6 +105,11 @@ namespace TCC_Pizzaria
         }
 
         private void txtProduto3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
