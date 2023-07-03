@@ -318,5 +318,11 @@
   <ItemGroup>
     <None Include="Resources\atualizar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lua-crescente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sol.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
