@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlNovoCliente = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnVoltarListaCliente = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtReferencia = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnCadastrarCliente = new Guna.UI2.WinForms.Guna2Button();
@@ -44,7 +45,6 @@
             this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.msgErro = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.msgSucesso = new Guna.UI2.WinForms.Guna2MessageDialog();
-            this.btnVoltarListaCliente = new Guna.UI2.WinForms.Guna2Button();
             this.pnlNovoCliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,13 +71,31 @@
             this.pnlNovoCliente.Size = new System.Drawing.Size(860, 527);
             this.pnlNovoCliente.TabIndex = 25;
             // 
+            // btnVoltarListaCliente
+            // 
+            this.btnVoltarListaCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.btnVoltarListaCliente.BackgroundImage = global::TCC_Pizzaria.Properties.Resources.botao_voltar;
+            this.btnVoltarListaCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVoltarListaCliente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltarListaCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVoltarListaCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVoltarListaCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVoltarListaCliente.FillColor = System.Drawing.Color.Transparent;
+            this.btnVoltarListaCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVoltarListaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.btnVoltarListaCliente.Location = new System.Drawing.Point(3, 3);
+            this.btnVoltarListaCliente.Name = "btnVoltarListaCliente";
+            this.btnVoltarListaCliente.Size = new System.Drawing.Size(30, 32);
+            this.btnVoltarListaCliente.TabIndex = 60;
+            this.btnVoltarListaCliente.Click += new System.EventHandler(this.btnVoltarListaCliente_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(426, 190);
+            this.label4.Location = new System.Drawing.Point(433, 246);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 41;
@@ -98,7 +116,7 @@
             this.txtReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtReferencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtReferencia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtReferencia.Location = new System.Drawing.Point(426, 209);
+            this.txtReferencia.Location = new System.Drawing.Point(433, 265);
             this.txtReferencia.Name = "txtReferencia";
             this.txtReferencia.PasswordChar = '\0';
             this.txtReferencia.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -115,9 +133,10 @@
             this.btnCadastrarCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCadastrarCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCadastrarCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCadastrarCliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCadastrarCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(316, 282);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(323, 338);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(215, 55);
             this.btnCadastrarCliente.TabIndex = 39;
@@ -130,7 +149,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(426, 134);
+            this.label7.Location = new System.Drawing.Point(433, 190);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 16);
             this.label7.TabIndex = 38;
@@ -152,7 +171,7 @@
             this.txtNumero_Casa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtNumero_Casa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNumero_Casa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumero_Casa.Location = new System.Drawing.Point(426, 153);
+            this.txtNumero_Casa.Location = new System.Drawing.Point(433, 209);
             this.txtNumero_Casa.Name = "txtNumero_Casa";
             this.txtNumero_Casa.PasswordChar = '\0';
             this.txtNumero_Casa.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -177,7 +196,7 @@
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtCep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCep.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCep.Location = new System.Drawing.Point(426, 97);
+            this.txtCep.Location = new System.Drawing.Point(433, 153);
             this.txtCep.Name = "txtCep";
             this.txtCep.PasswordChar = '\0';
             this.txtCep.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -193,7 +212,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(426, 78);
+            this.label1.Location = new System.Drawing.Point(433, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 16);
             this.label1.TabIndex = 35;
@@ -205,7 +224,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(182, 190);
+            this.label2.Location = new System.Drawing.Point(189, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 16);
             this.label2.TabIndex = 34;
@@ -226,7 +245,7 @@
             this.txtNumero_Telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtNumero_Telefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNumero_Telefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNumero_Telefone.Location = new System.Drawing.Point(182, 209);
+            this.txtNumero_Telefone.Location = new System.Drawing.Point(189, 265);
             this.txtNumero_Telefone.Name = "txtNumero_Telefone";
             this.txtNumero_Telefone.PasswordChar = '\0';
             this.txtNumero_Telefone.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -251,7 +270,7 @@
             this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCpf.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCpf.Location = new System.Drawing.Point(182, 153);
+            this.txtCpf.Location = new System.Drawing.Point(189, 209);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.PasswordChar = '\0';
             this.txtCpf.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -267,7 +286,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(182, 133);
+            this.label6.Location = new System.Drawing.Point(189, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 16);
             this.label6.TabIndex = 31;
@@ -279,7 +298,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(182, 77);
+            this.label3.Location = new System.Drawing.Point(189, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 30;
@@ -300,7 +319,7 @@
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNome.Location = new System.Drawing.Point(182, 96);
+            this.txtNome.Location = new System.Drawing.Point(189, 152);
             this.txtNome.Name = "txtNome";
             this.txtNome.PasswordChar = '\0';
             this.txtNome.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -328,24 +347,6 @@
             this.msgSucesso.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             this.msgSucesso.Text = null;
             // 
-            // btnVoltarListaCliente
-            // 
-            this.btnVoltarListaCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.btnVoltarListaCliente.BackgroundImage = global::TCC_Pizzaria.Properties.Resources.botao_voltar;
-            this.btnVoltarListaCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVoltarListaCliente.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoltarListaCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnVoltarListaCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnVoltarListaCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnVoltarListaCliente.FillColor = System.Drawing.Color.Transparent;
-            this.btnVoltarListaCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnVoltarListaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.btnVoltarListaCliente.Location = new System.Drawing.Point(3, 3);
-            this.btnVoltarListaCliente.Name = "btnVoltarListaCliente";
-            this.btnVoltarListaCliente.Size = new System.Drawing.Size(30, 32);
-            this.btnVoltarListaCliente.TabIndex = 60;
-            this.btnVoltarListaCliente.Click += new System.EventHandler(this.btnVoltarListaCliente_Click);
-            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +356,7 @@
             this.Controls.Add(this.pnlNovoCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadastroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro_Usuario";
             this.Load += new System.EventHandler(this.Cadastro_Usuario_Load);
             this.pnlNovoCliente.ResumeLayout(false);

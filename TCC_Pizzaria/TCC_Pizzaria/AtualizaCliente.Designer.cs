@@ -46,6 +46,7 @@
             this.btnCancelarCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancelarCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancelarCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancelarCliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.btnCancelarCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancelarCliente.ForeColor = System.Drawing.Color.White;
             this.btnCancelarCliente.Location = new System.Drawing.Point(548, 383);
@@ -62,6 +63,7 @@
             this.btnAttCliente.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAttCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAttCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAttCliente.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
             this.btnAttCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAttCliente.ForeColor = System.Drawing.Color.White;
             this.btnAttCliente.Location = new System.Drawing.Point(671, 383);
@@ -242,6 +244,7 @@
             this.Controls.Add(this.btnCancelarCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AtualizaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AtualizaCliente";
             this.Load += new System.EventHandler(this.AtualizaCliente_Load);
             this.ResumeLayout(false);

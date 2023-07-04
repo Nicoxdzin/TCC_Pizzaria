@@ -173,7 +173,7 @@ namespace TCC_Pizzaria
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new GraficoPedido());
+            OpenChildForm(new ConfirmaLogin());
             label1.Text = "Gráficos";
         }
 

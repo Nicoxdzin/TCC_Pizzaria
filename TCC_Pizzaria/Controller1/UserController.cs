@@ -18,31 +18,9 @@ namespace Controller
             
         }
 
-        public Usuario Entrar(Usuario usu )
-        {
-            String logar = "SELECT * FROM tb_usuario WHERE usuario=@usuario AND senha=@senha";
-            SqlConnection conexao = conn.getConexao();
-            SqlCommand comando = new SqlCommand(logar, conexao);
-            conexao.Open();
-            comando.Parameters.AddWithValue("@usuario", usu.usuario);
-            comando.Parameters.AddWithValue("@senha", usu.senha);
-            SqlDataReader registro = comando.ExecuteReader();//executa a consulta
-            if (registro.HasRows)
-            {
-                registro.Read();
-                usu.usuario = Convert.ToString(registro["usuario"]);
-                usu.senha = Convert.ToString(registro["senha"]);
-                usu.perfil = Convert.ToInt16(registro["perfil"]);
-                usu.logado = true;
-
-
-            }
-            return usu;
-        }
-
         public Cliente Cadastrar(Cliente cadastro)
         {
-            String cadastrar = "INSERT INTO tb_cadastro values (@nome,@cpf,@numero_tel,@cep,@numero_casa,@referencia)";
+            String cadastrar = "INSERT INTO tb_cliente values (@nome,@cpf,@numero_tel,@cep,@numero_casa,@referencia)";
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(cadastrar, conexao);
             conexao.Open();
@@ -59,7 +37,7 @@ namespace Controller
         }
         public Cliente DeletarCliente(Cliente cliente)
         {
-            string deletar = "DELETE FROM tb_cadastro WHERE id = @Id";
+            string deletar = "DELETE FROM tb_cliente WHERE id = @Id";
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(deletar, conexao);
             conexao.Open();
@@ -70,7 +48,7 @@ namespace Controller
         }
         public bool AtualizarCliente(Cliente cliente)
         {
-            string atualizar = "UPDATE tb_cadastro SET nome = @nome, cpf = @cpf, numero_tel = @numero_tel, cep = @cep, numero_casa = @numero_casa, referencia = @eferencia, WHERE Id = @Id";
+            string atualizar = "UPDATE tb_clienteo SET nome = @nome, cpf = @cpf, numero_tel = @numero_tel, cep = @cep, numero_casa = @numero_casa, referencia = @eferencia, WHERE Id = @Id";
 
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(atualizar, conexao);
@@ -91,7 +69,7 @@ namespace Controller
         {
             Cliente cliente = null;
 
-            string query = "SELECT * FROM tb_cadastro WHERE id = " + Id;
+            string query = "SELECT * FROM tb_cliente WHERE id = " + Id;
             SqlConnection conexao = conn.getConexao();
             SqlCommand command = new SqlCommand(query, conexao);
             conexao.Open();
@@ -116,7 +94,7 @@ namespace Controller
         }
         public bool AtualizarClientePorId(Cliente cliente)
         {
-            string atualizar = "UPDATE tb_cadastro SET nome = @nome, cpf = @cpf, numero_tel = @numero_tel, cep = @cep, numero_casa = @numero_casa WHERE Id = @Id";
+            string atualizar = "UPDATE tb_cliente SET nome = @nome, cpf = @cpf, numero_tel = @numero_tel, cep = @cep, numero_casa = @numero_casa WHERE Id = @Id";
 
             SqlConnection conexao = conn.getConexao();
             SqlCommand comando = new SqlCommand(atualizar, conexao);
@@ -139,7 +117,7 @@ namespace Controller
 
 
             {
-                string query = "SELECT * FROM tb_cadastro";
+                string query = "SELECT * FROM tb_cliente";
                 SqlConnection conexao = conn.getConexao();
                 SqlCommand command = new SqlCommand(query, conexao);
                 conexao.Open();

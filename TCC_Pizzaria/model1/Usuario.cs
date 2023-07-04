@@ -15,7 +15,6 @@ namespace model1
         public string email{ get; set; }
         public string usuario { get; set; }
         public string senha { get; set; }
-        public bool logado { get; set; }
 
 
         public Usuario()
@@ -25,7 +24,6 @@ namespace model1
             this.email = "";
             this.usuario = string.Empty;
             this.senha = string.Empty;
-            this.logado = false;
         }
 
     }

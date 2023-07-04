@@ -30,7 +30,8 @@ namespace TCC_Pizzaria
 
         private void Pedidos_Load(object sender, EventArgs e)
         {
-
+            btnLight.Enabled = false;
+            btnDark.Enabled = false;
         }
 
         private void btnRelatorio_Click(object sender, EventArgs e)
@@ -44,6 +45,11 @@ namespace TCC_Pizzaria
         }
 
         private void pnlListaPedido_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnDark_Click(object sender, EventArgs e)
         {
 
         }

@@ -29,24 +29,17 @@ namespace TCC_Pizzaria
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            UserController usu_controller = new UserController();
-            Usuario usuario= new Usuario();
-            usuario.usuario = txtNome.Text;
-            usuario.senha  = txtSenha.Text;
-            usuario = usu_controller.Entrar(usuario);
-            if(usuario.logado == true) {
+            AdminController adm_controller = new AdminController();
+            Admin admin= new Admin();
+            admin.CPF = txtCPF.Text;
+            admin.Senha  = txtSenha.Text;
+            admin = adm_controller.Entrar(admin);
+            if(admin.logado == true) {
+               
+               Funcionario funcionario = new Funcionario();
+               funcionario.ShowDialog();
+                
 
-              if (usuario.perfil == 1)
-            {
-                Admin admin = new Admin();
-                admin.ShowDialog();
-            }
-            else
-            {
-                Funcionario funcionario = new Funcionario();
-                funcionario.ShowDialog();
-            }
-            
             }
             
 
@@ -62,24 +55,17 @@ namespace TCC_Pizzaria
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            UserController usu_controller = new UserController();
-            Usuario usuario = new Usuario();
-            usuario.usuario = txtNome.Text;
-            usuario.senha = txtSenha.Text;
-            usuario = usu_controller.Entrar(usuario);
-            if (usuario.logado == true)
+            AdminController adm_controller = new AdminController();
+            Admin admin = new Admin();
+            admin.CPF = txtCPF.Text;
+            admin.Senha = txtSenha.Text;
+            admin = adm_controller.Entrar(admin);
+            if (admin.logado == true)
             {
-
-                if (usuario.perfil == 1)
-                {
-                    Admin admin = new Admin();
-                    admin.ShowDialog();
-                }
-                else
-                {
-                    Funcionario funcionario = new Funcionario();
+         
+                Funcionario funcionario = new Funcionario();
                     funcionario.ShowDialog();
-                }
+                this.Close();
 
             }
             else 

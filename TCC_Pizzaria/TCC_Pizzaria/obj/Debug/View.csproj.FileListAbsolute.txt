@@ -142,11 +142,9 @@ C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debu
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\bin\Debug\model1.pdb
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.AssemblyReference.cache
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\View.csproj.SuggestedBindingRedirects.cache
-C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Admin.resources
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.AtualizaCliente.resources
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.AtualizaPedido.resources
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.CadastroCliente.resources
-C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.GraficoPedido.resources
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.ListaCliente.resources
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Login.resources
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Funcionario.resources
@@ -161,3 +159,4 @@ C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debu
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.exe
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.pdb
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.Config.resources
+C:\Users\Aluno\Documents\projeto\TCC_Pizzaria\TCC_Pizzaria\TCC_Pizzaria\obj\Debug\TCC_Pizzaria.ConfirmaLogin.resources

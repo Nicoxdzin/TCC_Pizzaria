@@ -16,7 +16,7 @@ namespace TCC_Pizzaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Funcionario());
+            Application.Run(new Login());
         }
     }
 }
