@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="13824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="14336">
       <assemblyIdentity name="Controller1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EOMf6ppwfXJecGqZzZWIHGxuInrlhdNlJAiTwS4f6uc=</dsig:DigestValue>
+        <dsig:DigestValue>VmOXr7MldMdQb/+/R6jIMjqijE/MRqsQMr/BltYL9HU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="646104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="652248">
       <assemblyIdentity name="TCC_Pizzaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bVIkzSIlpCsDCD23mkvYX2hNuh3oVKcTuCytYpfxRr0=</dsig:DigestValue>
+        <dsig:DigestValue>lFU1mZFW11TyoQ8ZVPVv73GSwTaO2YyKneZx190MWmk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

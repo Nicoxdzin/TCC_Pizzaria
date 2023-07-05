@@ -43,14 +43,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnNovoAdm = new System.Windows.Forms.LinkLabel();
             this.pnlListaPedido = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDark = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnLight = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnDeletarAdm = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDark = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnLight = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnDeletarAdm = new System.Windows.Forms.LinkLabel();
             this.guna2Panel1.SuspendLayout();
             this.pnlListaPedido.SuspendLayout();
             this.SuspendLayout();
@@ -254,6 +254,7 @@
             this.btnNovoAdm.TabIndex = 9;
             this.btnNovoAdm.TabStop = true;
             this.btnNovoAdm.Text = "Cadastrar um novo administrador";
+            this.btnNovoAdm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnNovoAdm_LinkClicked);
             // 
             // pnlListaPedido
             // 
@@ -279,6 +280,53 @@
             this.pnlListaPedido.Size = new System.Drawing.Size(860, 527);
             this.pnlListaPedido.TabIndex = 5;
             this.pnlListaPedido.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlListaPedido_Paint);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.linkLabel1.Location = new System.Drawing.Point(27, 461);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(95, 17);
+            this.linkLabel1.TabIndex = 16;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Deletar sabor";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.linkLabel2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.linkLabel2.Location = new System.Drawing.Point(27, 421);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(85, 17);
+            this.linkLabel2.TabIndex = 15;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Novo Sabor";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(26, 361);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(166, 21);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Controle de sabores";
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.DarkGray;
+            this.guna2Panel3.Location = new System.Drawing.Point(23, 385);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(448, 1);
+            this.guna2Panel3.TabIndex = 13;
             // 
             // guna2Panel2
             // 
@@ -338,53 +386,6 @@
             this.btnDeletarAdm.TabIndex = 10;
             this.btnDeletarAdm.TabStop = true;
             this.btnDeletarAdm.Text = "Deletar um Administrador";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.linkLabel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkLabel1.Location = new System.Drawing.Point(27, 461);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(95, 17);
-            this.linkLabel1.TabIndex = 16;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Deletar sabor";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.linkLabel2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkLabel2.Location = new System.Drawing.Point(27, 421);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(85, 17);
-            this.linkLabel2.TabIndex = 15;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Novo Sabor";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(26, 361);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 21);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Controle de sabores";
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.DarkGray;
-            this.guna2Panel3.Location = new System.Drawing.Point(23, 385);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(448, 1);
-            this.guna2Panel3.TabIndex = 13;
             // 
             // Config
             // 

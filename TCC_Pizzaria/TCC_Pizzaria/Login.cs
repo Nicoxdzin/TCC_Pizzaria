@@ -29,22 +29,6 @@ namespace TCC_Pizzaria
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            AdminController adm_controller = new AdminController();
-            Admin admin= new Admin();
-            admin.CPF = txtCPF.Text;
-            admin.Senha  = txtSenha.Text;
-            admin = adm_controller.Entrar(admin);
-            if(admin.logado == true) {
-               
-               Funcionario funcionario = new Funcionario();
-               funcionario.ShowDialog();
-                
-
-            }
-            
-
-
-
           
         }
 

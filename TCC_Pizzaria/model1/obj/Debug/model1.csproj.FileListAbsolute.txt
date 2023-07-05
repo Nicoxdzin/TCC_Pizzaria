@@ -28,3 +28,9 @@ C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\mode
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.dll
 C:\Users\Aluno\Documents\Projeto\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.pdb
+C:\Users\Aluno\Documents\TCC_Pizzaria\TCC_Pizzaria\model1\bin\Debug\model1.dll
+C:\Users\Aluno\Documents\TCC_Pizzaria\TCC_Pizzaria\model1\bin\Debug\model1.pdb
+C:\Users\Aluno\Documents\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.dll
+C:\Users\Aluno\Documents\TCC_Pizzaria\TCC_Pizzaria\model1\obj\Debug\model1.pdb

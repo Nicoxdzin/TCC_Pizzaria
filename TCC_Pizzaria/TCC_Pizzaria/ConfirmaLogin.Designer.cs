@@ -32,8 +32,8 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.txtCPF = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
-            this.entrar = new Guna.UI2.WinForms.Guna2Button();
-            this.msgSenhaIncorreta = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.btnEntrar = new Guna.UI2.WinForms.Guna2Button();
+            this.MsgSenhaIncorreta = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -79,29 +79,29 @@
             this.txtSenha.Size = new System.Drawing.Size(200, 36);
             this.txtSenha.TabIndex = 1;
             // 
-            // entrar
+            // btnEntrar
             // 
-            this.entrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.entrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.entrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.entrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.entrar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.entrar.ForeColor = System.Drawing.Color.White;
-            this.entrar.Location = new System.Drawing.Point(233, 219);
-            this.entrar.Name = "entrar";
-            this.entrar.Size = new System.Drawing.Size(180, 45);
-            this.entrar.TabIndex = 2;
-            this.entrar.Text = "guna2Button1";
-            this.entrar.Click += new System.EventHandler(this.entrar_Click);
+            this.btnEntrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEntrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEntrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEntrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.Location = new System.Drawing.Point(233, 219);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(180, 45);
+            this.btnEntrar.TabIndex = 2;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.Click += new System.EventHandler(this.entrar_Click);
             // 
-            // msgSenhaIncorreta
+            // MsgSenhaIncorreta
             // 
-            this.msgSenhaIncorreta.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            this.msgSenhaIncorreta.Caption = null;
-            this.msgSenhaIncorreta.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
-            this.msgSenhaIncorreta.Parent = null;
-            this.msgSenhaIncorreta.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
-            this.msgSenhaIncorreta.Text = null;
+            this.MsgSenhaIncorreta.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.MsgSenhaIncorreta.Caption = null;
+            this.MsgSenhaIncorreta.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
+            this.MsgSenhaIncorreta.Parent = null;
+            this.MsgSenhaIncorreta.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.MsgSenhaIncorreta.Text = null;
             // 
             // ConfirmaLogin
             // 
@@ -109,7 +109,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(650, 320);
-            this.Controls.Add(this.entrar);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtCPF);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -127,7 +127,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtCPF;
-        private Guna.UI2.WinForms.Guna2Button entrar;
-        private Guna.UI2.WinForms.Guna2MessageDialog msgSenhaIncorreta;
+        private Guna.UI2.WinForms.Guna2Button btnEntrar;
+        private Guna.UI2.WinForms.Guna2MessageDialog MsgSenhaIncorreta;
     }
 }

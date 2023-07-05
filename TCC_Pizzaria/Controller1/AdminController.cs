@@ -33,5 +33,22 @@ namespace Controller1
             }
             return adm;
         }
+
+        public Admin Cadastrar(Admin admin)
+        {
+            String cadastrar = "INSERT INTO tb_adm values (@nome,@sobrenome,@cpf,@senha,@dataCadastro)";
+            SqlConnection conexao = conn.getConexao();
+            SqlCommand comando = new SqlCommand(cadastrar, conexao);
+            conexao.Open();
+            comando.Parameters.AddWithValue("@nome", admin.Nome);
+            comando.Parameters.AddWithValue("@sobrenome", admin.Sobrenome);
+            comando.Parameters.AddWithValue("@cpf", admin.CPF);
+            comando.Parameters.AddWithValue("@senha", admin.Senha);
+            comando.Parameters.AddWithValue("@dataCadastro", admin.DataCadastro);
+            comando.ExecuteReader();
+
+            return admin;
+
+        }
     }
 }

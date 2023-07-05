@@ -53,5 +53,11 @@ namespace TCC_Pizzaria
         {
 
         }
+
+        private void btnNovoAdm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            NovoAdm novoadm = new NovoAdm();
+            novoadm.ShowDialog();
+        }
     }
 }

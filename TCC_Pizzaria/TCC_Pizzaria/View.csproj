@@ -134,6 +134,12 @@
     <Compile Include="ListaPedido.Designer.cs">
       <DependentUpon>ListaPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="NovoAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovoAdm.Designer.cs">
+      <DependentUpon>NovoAdm.cs</DependentUpon>
+    </Compile>
     <Compile Include="NovoPedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListaPedido.resx">
       <DependentUpon>ListaPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovoAdm.resx">
+      <DependentUpon>NovoAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NovoPedido.resx">
       <DependentUpon>NovoPedido.cs</DependentUpon>
