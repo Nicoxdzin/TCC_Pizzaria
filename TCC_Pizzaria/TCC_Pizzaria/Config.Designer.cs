@@ -48,9 +48,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDeletarAdm = new System.Windows.Forms.LinkLabel();
             this.btnDark = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnLight = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnDeletarAdm = new System.Windows.Forms.LinkLabel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.pnlListaPedido.SuspendLayout();
             this.SuspendLayout();
@@ -260,6 +261,7 @@
             // 
             this.pnlListaPedido.AutoScroll = true;
             this.pnlListaPedido.BorderRadius = 10;
+            this.pnlListaPedido.Controls.Add(this.guna2Panel5);
             this.pnlListaPedido.Controls.Add(this.linkLabel1);
             this.pnlListaPedido.Controls.Add(this.linkLabel2);
             this.pnlListaPedido.Controls.Add(this.label6);
@@ -294,6 +296,7 @@
             this.linkLabel1.TabIndex = 16;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Deletar sabor";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -308,6 +311,7 @@
             this.linkLabel2.TabIndex = 15;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Novo Sabor";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label6
             // 
@@ -335,6 +339,21 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(448, 1);
             this.guna2Panel2.TabIndex = 7;
+            // 
+            // btnDeletarAdm
+            // 
+            this.btnDeletarAdm.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeletarAdm.AutoSize = true;
+            this.btnDeletarAdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.btnDeletarAdm.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeletarAdm.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDeletarAdm.Location = new System.Drawing.Point(27, 310);
+            this.btnDeletarAdm.Name = "btnDeletarAdm";
+            this.btnDeletarAdm.Size = new System.Drawing.Size(174, 17);
+            this.btnDeletarAdm.TabIndex = 10;
+            this.btnDeletarAdm.TabStop = true;
+            this.btnDeletarAdm.Text = "Deletar um Administrador";
+            this.btnDeletarAdm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnDeletarAdm_LinkClicked);
             // 
             // btnDark
             // 
@@ -373,19 +392,12 @@
             this.btnLight.TabIndex = 11;
             this.btnLight.Text = "Claro";
             // 
-            // btnDeletarAdm
+            // guna2Panel5
             // 
-            this.btnDeletarAdm.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDeletarAdm.AutoSize = true;
-            this.btnDeletarAdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.btnDeletarAdm.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletarAdm.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDeletarAdm.Location = new System.Drawing.Point(27, 310);
-            this.btnDeletarAdm.Name = "btnDeletarAdm";
-            this.btnDeletarAdm.Size = new System.Drawing.Size(174, 17);
-            this.btnDeletarAdm.TabIndex = 10;
-            this.btnDeletarAdm.TabStop = true;
-            this.btnDeletarAdm.Text = "Deletar um Administrador";
+            this.guna2Panel5.Location = new System.Drawing.Point(590, 18);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(247, 485);
+            this.guna2Panel5.TabIndex = 17;
             // 
             // Config
             // 
@@ -431,5 +443,6 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
     }
 }

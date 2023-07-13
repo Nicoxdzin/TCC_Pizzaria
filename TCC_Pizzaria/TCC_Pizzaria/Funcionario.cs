@@ -182,5 +182,10 @@ namespace TCC_Pizzaria
             OpenChildForm(new Config());
             label1.Text = "Configurações";
         }
+
+        private void guna2ShadowPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

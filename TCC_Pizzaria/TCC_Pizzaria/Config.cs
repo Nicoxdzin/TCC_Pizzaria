@@ -59,5 +59,23 @@ namespace TCC_Pizzaria
             NovoAdm novoadm = new NovoAdm();
             novoadm.ShowDialog();
         }
+
+        private void btnDeletarAdm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DeletarAdm deletarAdm = new DeletarAdm();
+            deletarAdm.ShowDialog();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            NovoSabor novosabor = new NovoSabor();
+            novosabor.ShowDialog();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DeletarSabor deletarsabor = new DeletarSabor();
+            deletarsabor.ShowDialog();
+        }
     }
 }

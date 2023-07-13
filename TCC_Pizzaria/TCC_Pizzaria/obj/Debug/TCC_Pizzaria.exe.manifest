@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Controller1.dll" size="16896">
       <assemblyIdentity name="Controller1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VmOXr7MldMdQb/+/R6jIMjqijE/MRqsQMr/BltYL9HU=</dsig:DigestValue>
+        <dsig:DigestValue>CE6MT6Kzmkun93w7ucqhOpV27fzY5dbG1tEEPKna7ek=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,19 +73,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YA0WuNCJ7nvHwOkXtjL5iKRN+dr/DDaf5+gcedgS3N0=</dsig:DigestValue>
+        <dsig:DigestValue>Qjtx0wru7c7KfNctOYCVzeR4ihWQa+edVOEonBd9u40=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="652248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TCC_Pizzaria.exe" size="1329112">
       <assemblyIdentity name="TCC_Pizzaria" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lFU1mZFW11TyoQ8ZVPVv73GSwTaO2YyKneZx190MWmk=</dsig:DigestValue>
+        <dsig:DigestValue>XKUIgTSvzSlLnhtFCRhp6DprwEhQ55YFQmF8HG6rhqg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

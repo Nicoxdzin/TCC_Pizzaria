@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="TCC_Pizzaria.exe.manifest" size="5448">
+    <dependentAssembly dependencyType="install" codebase="TCC_Pizzaria.exe.manifest" size="5449">
       <assemblyIdentity name="TCC_Pizzaria.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EofNEEb0VCg+ukpUVZGfqkENvn7vuMHWvTBmeGGBMDk=</dsig:DigestValue>
+        <dsig:DigestValue>yL4ckobWsi0oEpAYz+gEfkv1ftnk713UHvsqGEHAXDg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

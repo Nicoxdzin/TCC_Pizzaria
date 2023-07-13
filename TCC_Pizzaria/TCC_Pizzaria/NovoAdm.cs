@@ -41,17 +41,25 @@ namespace TCC_Pizzaria
                 admin.CPF = txtCpf.Text;
                 admin.Senha = txtSenha.Text;
 
-                admin = admin_controller.Cadastrar(admin);
+                
 
-                if (admin.Id < 0)
-               {
-                    msgErroCadastro.Show("Erro ao cadastrar ADM!");
-                }
-               else
+                if (admin_controller.VerificarCPF(admin.CPF))
                 {
-                    msgSucessoCadastro.Show("ADM cadastrado com sucesso.");
-
-
+                    msgSucessoCadastro.Show("CPF Já existente.");
+                    admin.CPF = txtCpf.Text = string.Empty;
+                }
+                else 
+                { 
+                    if (admin.Id < 0)
+                    {
+                        msgErroCadastro.Show("Erro ao cadastrar ADM!");
+                    }
+                    else
+                    {
+                        admin = admin_controller.Cadastrar(admin);
+                        msgSucessoCadastro.Show("ADM cadastrado com sucesso.");
+                        this.Close();
+                    }
                 }
             }
         }

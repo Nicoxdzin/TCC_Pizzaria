@@ -207,6 +207,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SaborController.cs" />
     <Compile Include="UserController.cs" />
   </ItemGroup>
   <ItemGroup>
